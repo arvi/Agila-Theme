@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>author</key>
+    <string>arvi</string>
+    <key>comment</key>
+    <string>A widget theme for the UI components of the Agila theme.</string>
+    <key>name</key>
+    <string>Agila - Widget Theme</string>
+    <key>settings</key>
+    <array>
+        <dict>
+            <key>settings</key>
+            <dict>
+                <key>background</key>
+                <string>#FAEABE</string>
+                <key>caret</key>
+                <string>#999999</string>
+                <key>foreground</key>
+                <string>#999999</string>
+                <key>invisibles</key>
+                <string>#BFBFBF</string>
+                <key>lineHighlight</key>
+                <string>#E4E4E4</string>
+                <key>selection</key>
+                <string>#BFBFBF</string>
+                <key>selectionBorder</key>
+                <string>#BFBFBF</string>
+                <key>inactiveSelection</key>
+                <string>#E4E4E4</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>Comment</string>
+            <key>scope</key>
+            <string>comment</string>
+            <key>settings</key>
+            <dict>
+                <key>fontStyle</key>
+                <string>italic</string>
+                <key>foreground</key>
+                <string>#BFBFBF</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>Keyword</string>
+            <key>scope</key>
+            <string>keyword, storage</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#BC810C</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>scope</key>
+            <string>constant</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#709C00</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>scope</key>
+            <string>string</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#999999</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>scope</key>
+            <string>constant.character.escape</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#9A9A9A</string>
+            </dict>
+        </dict>
+    </array>
+</dict>
+</plist>

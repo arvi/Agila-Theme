@@ -1,0 +1,1429 @@
+[
+//------------------------------------------------------------------------------
+// SETTINGS - USER PREFERENCES OPTIONS
+//------------------------------------------------------------------------------
+// SIDEBAR SIZE (default: medium)
+// "theme_agila_sidebar_small": true,
+// "theme_agila_sidebar_medium": true,
+// "theme_agila_sidebar_large": true,
+//
+//
+// SIDEBAR ENTRY/ITEM FONT SIZE (if not set, will default to font size: 13)
+// "theme_agila_sidebar_font_xsmall": true, //font-size: 11
+// "theme_agila_sidebar_font_small": true, //font-size: 12
+// "theme_agila_sidebar_font_big": true, //font-size: 14
+//
+//
+// SIDEBAR SELECTED ENTRY/ITEM (default: pink)
+// "theme_agila_sidebar_selected_entry_white": true,
+// "theme_agila_sidebar_selected_entry_gray": true,
+// "theme_agila_sidebar_selected_entry_lightblue": true,
+// "theme_agila_sidebar_selected_entry_yellow": true,
+// "theme_agila_sidebar_selected_entry_pink": true,
+//
+//
+// MODIFIED TAB - ICON MARKER COLOR (default: light blue)
+// "theme_agila_modified_tab_marker_white": true,
+// "theme_agila_modified_tab_marker_gray": true,
+// "theme_agila_modified_tab_marker_lightblue": true,
+// "theme_agila_modified_tab_marker_yellow": true,
+// "theme_agila_modified_tab_marker_pink": true,
+//
+// SCROLLBAR COLORS (default: light yellow)
+// "theme_agila_vertical_scrollbar_white": true,
+// "theme_agila_horizontal_scrollbar_white": true,
+//
+// "theme_agila_vertical_scrollbar_gray": true,
+// "theme_agila_horizontal_scrollbar_gray": true,
+//
+// "theme_agila_vertical_scrollbar_lightblue": true,
+// "theme_agila_horizontal_scrollbar_lightblue": true,
+//
+// "theme_agila_vertical_scrollbar_yellow": true,
+// "theme_agila_horizontal_scrollbar_yellow": true,
+//
+// "theme_agila_vertical_scrollbar_pink": true,
+// "theme_agila_horizontal_scrollbar_pink": true,
+//
+//
+// SCROLLBAR THINNESS (if not set, will default to thin:3)
+// "theme_agila_vertical_scrollbar_thinner": true,    //thin:2
+// "theme_agila_horizontal_scrollbar_thinner": true,
+//
+// "theme_agila_vertical_scrollbar_thinnest": true,   //thin:1
+// "theme_agila_horizontal_scrollbar_thinnest": true,
+//
+// "theme_agila_vertical_scrollbar_invisible": true,  //thin: 0
+// "theme_agila_horizontal_scrollbar_invisible": true,
+
+//------------------------------------------------------------------------------
+// COLOR PALETTES
+//------------------------------------------------------------------------------
+// [250, 234, 190] --> #faeabe
+//                     tab section background | selected sidebar row state |
+//                     find buttons | text input field border | bottom panel background |
+//                     quick panel background | quick panel section | mini quick panel section |
+//                     code completion popup background | status bar background
+//
+// [252, 240, 209] --> #fcf0d1
+//                     tab element background | grid layout | quick panel row selected state
+//                     mini quick panel row selected state | code completion table row |
+//                     scrollbar vertical control | scrollbar horizontal control |
+//                     scroll corner control | overlay scrollbar | empty window | dialog |
+//                     progress bar | tooltip background | sidebar background | sidebar tree |
+//                     find buttons hover state | find buttons pressed state
+//
+// [254, 252, 245] --> #fefcf5
+//                     tab element hover state | sidebar heading
+//
+// [253, 246, 227] --> #fdf6e3
+//                     tab element active state
+//
+// [151, 151, 151] --> #979797
+//                     tab label active state
+//
+// [141, 141, 141] --> #8d8d8d
+//                     sidebar entry default state | sidebar folder default state |
+//                     tab label active state
+//
+// [180, 180, 180] --> #b4b4b4
+//                     tab label hover state | quick panel match label |
+//                     quick panel path label | autocomplete match label
+//
+// [159, 154, 157] --> #9f9a9d
+//                     tab label inactive state | overlay scrollbar puck
+//                     progress gauge control | label default |
+//                     quick panel foreground | autocomplete foreground | status bar text color
+//
+// [200, 200, 200] --> #c8c8c8
+//                     tab close button | scroll left/right button | sidebar folder button hover state
+//
+// [241, 193, 62]  --> #f1c13e
+//                     tab dropdown hover state | text field dropdown hover state | bottom icon selected state
+//
+// [246, 217, 135] --> #f6d987
+//                     scroll drag/pluck
+//
+// [170, 170, 170] --> #aaaaaa
+//                     button labels
+//
+// [195, 195, 195] --> #c3c3c3
+//                     bottom icon default state
+//
+// [244, 205, 99]  --> #f4cd63
+//                     bottom icon hover state
+//
+// [239, 187, 44]  --> #efbb2c
+//                     quick panel selected match foreground | autocomplete match label
+//
+// [255, 255, 255] --> #ffffff - white theme
+//                     sidebar file close color | tab inactive state close button |
+//                     tab dropdown tint | fold button control hover state |
+//                     minimap control | sidebar file dirty close button tint |
+//                     text dropdown tint |
+//                     icon button control | sidebar folder button tint | sidebar icon tints
+//
+// [175, 175, 175] --> ##afafaf
+//                     fold button control default state
+//
+// [134, 145, 165] --> #8691a5 - gray theme
+//                     tooltip text | sidebar entry hover state
+//
+// [69, 183, 207]  --> #45b7cf - light blue theme
+//
+//
+// [254, 201, 106] --> #fec96a - yellow theme
+//
+// [243, 103, 129] --> #f36781 - pink theme
+//                     tab close button hover state | tab active state hover on close button
+//                     sidebar entry selected state | sidebar file close button tint
+
+//------------------------------------------------------------------------------
+// TABS
+//------------------------------------------------------------------------------
+    //Tab set
+    {
+        "class": "tabset_control",
+        "layer0.texture": "",
+        "layer0.tint": [250, 234, 190], //tab section background
+        "layer0.inner_margin": 0,
+        "layer0.opacity": 1.0,
+        "content_margin": 0,
+        "tab_overlap": 0,
+        "tab_width": 220,
+        "tab_min_width": 100,
+        "tab_height": 55,
+        "mouse_wheel_switch": false
+    },
+    {
+        "class": "tabset_control",
+        "settings": ["enable_tab_scrolling"],
+        "content_margin": 0
+    },
+    {
+        "class": "tabset_control",
+        "settings": ["mouse_wheel_switches_tabs"],
+        "mouse_wheel_switch": true
+    },
+
+    //Tab element
+    {
+        "class": "tab_control",
+        "content_margin": [8, 0],
+        "max_margin_trim": 0,
+        "hit_test_level": 0.5,
+        "layer0.texture": "",
+        "layer0.tint": [252, 240, 209], //tab element background
+        "layer0.inner_margin": [5, 5],
+        "layer0.opacity": 1.0
+    },
+    //Tab close state
+    {
+        "class": "tab_control",
+        "settings": ["show_tab_close_buttons"],
+        "content_margin": [15, 18, 15, 15] //tab element text and button margin
+    },
+    //Tab hover state
+    {
+        "class": "tab_control",
+        "attributes": ["hover"],
+        "layer0.texture": "",
+        "layer0.tint": [254, 252, 245], //tab element hover state
+    },
+    //Tab active state
+    {
+        "class": "tab_control",
+        "attributes": ["selected"],
+        "layer0.texture": "",
+        "layer0.tint": [253, 246, 227] //tab element active state
+    },
+    //Tab dirty state (close button hidden)
+    {
+        "class": "tab_control",
+        "settings": ["!show_tab_close_buttons"],
+        "attributes": ["dirty"],
+        "content_margin": [8, 0]
+    },
+
+
+//------------------------------------------------------------------------------
+// TABS - CLOSE / HIGHLIGHT / STATE BUTTONS
+//------------------------------------------------------------------------------
+    // Tab close button
+    {
+        "class": "tab_close_button",
+        "content_margin": [8, 8],
+        "layer0.texture": "Theme - Agila/assets/tab-close.png",
+        "layer0.tint": [200, 200, 200], //tab close button
+    },
+    {
+        "class": "tab_close_button",
+        "settings": ["show_tab_close_buttons"],
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "tab_close_button",
+        "parents": [{"class": "tab_control", "attributes": ["hover"]}],
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "tab_close_button",
+        "parents": [{"class": "tab_control", "attributes": ["selected"]}],
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "tab_close_button",
+        "parents": [{"class": "tab_control"}],
+        "attributes": ["hover"],
+        "layer0.tint": [243, 103, 129], //tab close button hover state
+        "layer0.opacity": 1.0
+    },
+    // Tab dirty button
+    {
+        "class": "tab_close_button",
+        "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
+        "layer0.texture": "Theme - Agila/assets/tab-dirty-lightblue.png",
+        "layer0.opacity": 1.0,
+        "layer0.inner_margin": 0
+    },
+            // Tab dirty button - options
+            {
+                "class": "tab_close_button",
+                "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
+                "settings": ["theme_agila_modified_tab_marker_white"],
+                "layer0.texture": "Theme - Agila/assets/tab-dirty-white.png"
+            },
+            {
+                "class": "tab_close_button",
+                "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
+                "settings": ["theme_agila_modified_tab_marker_gray"],
+                "layer0.texture": "Theme - Agila/assets/tab-dirty-gray.png"
+            },
+            {
+                "class": "tab_close_button",
+                "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
+                "settings": ["theme_agila_modified_tab_marker_lightblue"],
+                "layer0.texture": "Theme - Agila/assets/tab-dirty-lightblue.png"
+            },
+            {
+                "class": "tab_close_button",
+                "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
+                "settings": ["theme_agila_modified_tab_marker_yellow"],
+                "layer0.texture": "Theme - Agila/assets/tab-dirty-yellow.png"
+            },
+            {
+                "class": "tab_close_button",
+                "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
+                "settings": ["theme_agila_modified_tab_marker_pink"],
+                "layer0.texture": "Theme - Agila/assets/tab-dirty-pink.png"
+            },
+
+    // Tab highlight button
+    {
+        "class": "tab_close_button",
+        "settings": ["highlight_modified_tabs"],
+        "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
+        "layer0.tint": [255, 255, 255], //tab inactive state close button
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "tab_close_button",
+        "settings": ["highlight_modified_tabs"],
+        "parents": [{"class": "tab_control", "attributes": ["dirty", "hover"]}],
+        "layer0.texture": "Theme - Agila/assets/tab-close.png",
+        "attributes": ["hover"],
+        "layer0.tint": [243, 103, 129], //tab active state hover on close button
+        "layer0.opacity": 1.0
+    },
+
+
+//------------------------------------------------------------------------------
+// TABS - LABELS
+//------------------------------------------------------------------------------
+    //Tab label inactive state
+    {
+        "class": "tab_label",
+        "fade": true,
+        "fg": [159, 154, 157], //tab label inactive state
+        "font.size": 13
+    },
+    //Tab label highlighted state
+    {
+        "class": "tab_label",
+        "parents": [{"class": "tab_control", "attributes": ["hover"]}],
+        "fg": [180, 180, 180] //tab label hover state
+    },
+    //Tab label active state
+    {
+        "class": "tab_label",
+        "parents": [{"class": "tab_control", "attributes": ["selected"]}],
+        "fg": [141, 141, 141] //tab label active state
+    },
+    {
+        "class": "tab_label",
+        "attributes": ["transient"],
+        "font.italic": true
+    },
+
+
+//------------------------------------------------------------------------------
+// TABS - LIST & SCROLL ICONS
+//------------------------------------------------------------------------------
+    {
+        "class": "show_tabs_dropdown_button",
+        "content_margin": [10,10],
+        "layer0.texture": "Theme - Agila/assets/tabset-list.png",
+        "layer0.tint": [255, 255, 255], //tab dropdown tint
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "show_tabs_dropdown_button",
+        "attributes": ["hover"],
+        "layer0.texture": "Theme - Agila/assets/tabset-list-hover.png",
+        "layer0.tint": [241, 193, 62], //tab dropdown hover state
+        "layer0.opacity": 1.0
+    },
+    // Tab scroll left
+    {
+        "class": "scroll_tabs_left_button",
+        "content_margin": [9,8,7,5],
+        "layer0.texture": "Theme - Agila/assets/tabset-left-arrow.png",
+        "layer0.tint": [200, 200, 200], //scroll left/right button
+        "layer0.inner_margin": 0,
+        "layer0.opacity": 0.5
+    },
+    {
+        "class": "scroll_tabs_left_button",
+        "attributes": ["hover"],
+        "layer0.tint": [200, 200, 200], //scroll left/right button
+        "layer0.opacity": 1.0
+    },
+    // Tab scroll right
+    {
+        "class": "scroll_tabs_right_button",
+        "content_margin": [9,8,7,5],
+        "layer0.texture": "Theme - Agila/assets/tabset-right-arrow.png",
+        "layer0.tint": [200, 200, 200], //scroll left/right button
+        "layer0.inner_margin": 0,
+        "layer0.opacity": 0.5
+    },
+    {
+        "class": "scroll_tabs_right_button",
+        "attributes": ["hover"],
+        "layer0.tint": [200, 200, 200], //scroll left/right button
+        "layer0.opacity": 1.0
+    },
+
+
+//------------------------------------------------------------------------------
+// FOLD BUTTONS
+//------------------------------------------------------------------------------
+    {
+        "class": "fold_button_control",
+        "layer0.texture": "Theme - Agila/assets/fold-closed.png",
+        "layer0.tint": [175, 175, 175], //fold button control default state
+        "layer0.opacity": 1.0,
+        "layer0.inner_margin": 0,
+        "content_margin": [7,7]
+    },
+    {
+        "class": "fold_button_control",
+        "layer0.tint": [255, 255, 255], //fold button control hover state
+        "attributes": ["hover"],
+    },
+    {
+        "class": "fold_button_control",
+        "attributes": ["expanded"],
+        "layer0.texture": "Theme - Agila/assets/fold-open.png"
+    },
+
+
+//------------------------------------------------------------------------------
+// STANDARD SCROLLBARS
+//------------------------------------------------------------------------------
+    //Standard vertical scroll bar
+    {
+        "class": "scroll_bar_control",
+        "layer0.tint": [252, 240, 209], //scrollbar vertical control
+        "layer0.opacity": 1.0,
+        "layer0.inner_margin": 0,
+        "blur": true
+    },
+    //Standard horizontal scroll bar
+    {
+        "class": "scroll_bar_control",
+        "attributes": ["horizontal"],
+        "layer0.tint": [252, 240, 209], //scrollbar horizontal control
+        "layer0.opacity": 1.0,
+        "layer0.inner_margin": 0,
+        "blur": true
+    },
+    //Standard scroll bar corner
+    {
+        "class": "scroll_corner_control",
+        "layer0.tint":[252, 240, 209], //scroll corner control
+        "layer0.inner_margin": 0,
+        "layer0.opacity": 1.0
+    },
+    //Standard vertical scroll puck
+    {
+        "class": "puck_control",
+        "layer0.tint":[246, 217, 135], //scroll drag/pluck
+        "layer0.opacity": 1.0,
+        "layer0.inner_margin": 0,
+        "content_margin": [3,0],
+        "blur": false
+    },
+            //Standard vertical scroll puck - options
+            {
+                "class": "puck_control",
+                "settings": ["theme_agila_vertical_scrollbar_white"],
+                "layer0.tint": [255, 255, 255] //white theme
+            },
+            {
+                "class": "puck_control",
+                "settings": ["theme_agila_vertical_scrollbar_gray"],
+                "layer0.tint": [134, 145, 165] //gray theme
+            },
+            {
+                "class": "puck_control",
+                "settings": ["theme_agila_vertical_scrollbar_lightblue"],
+                "layer0.tint": [69, 183, 207] //light blue theme
+            },
+            {
+                "class": "puck_control",
+                "settings": ["theme_agila_vertical_scrollbar_yellow"],
+                "layer0.tint": [254, 201, 106] //yellow theme
+            },
+            {
+                "class": "puck_control",
+                "settings": ["theme_agila_vertical_scrollbar_pink"],
+                "layer0.tint": [243, 103, 129] //pink theme
+            },
+
+            //Standard vertical scroll thinness - options
+            {
+                "class": "puck_control",
+                "settings": ["theme_agila_vertical_scrollbar_thinner"],
+                "content_margin": [2,0]
+            },
+            {
+                "class": "puck_control",
+                "settings": ["theme_agila_vertical_scrollbar_thinnest"],
+                "content_margin": [1,0]
+            },
+            {
+                "class": "puck_control",
+                "settings": ["theme_agila_vertical_scrollbar_invisible"],
+                "content_margin": [0,0]
+            },
+
+    //Standard horizontal scroll puck
+    {
+        "class": "puck_control",
+        "attributes": ["horizontal"],
+        "layer0.tint":[246, 217, 135], //scroll drag/pluck
+        "layer0.inner_margin": 0,
+        "content_margin": [10,3],
+        "blur": false
+    },
+            //Standard horizontal scroll puck - options
+            {
+                "class": "puck_control",
+                "attributes": ["horizontal"],
+                "settings": ["theme_agila_horizontal_scrollbar_white"],
+                "layer0.tint": [255, 255, 255] //white theme
+            },
+            {
+                "class": "puck_control",
+                "attributes": ["horizontal"],
+                "settings": ["theme_agila_horizontal_scrollbar_gray"],
+                "layer0.tint": [134, 145, 165] //gray theme
+            },
+            {
+                "class": "puck_control",
+                "attributes": ["horizontal"],
+                "settings": ["theme_agila_horizontal_scrollbar_lightblue"],
+                "layer0.tint": [69, 183, 207] //light blue theme
+            },
+            {
+                "class": "puck_control",
+                "attributes": ["horizontal"],
+                "settings": ["theme_agila_horizontal_scrollbar_yellow"],
+                "layer0.tint": [254, 201, 106] //yellow theme
+            },
+            {
+                "class": "puck_control",
+                "attributes": ["horizontal"],
+                "settings": ["theme_agila_horizontal_scrollbar_pink"],
+                "layer0.tint": [243, 103, 129] //pink theme
+            },
+
+            //Standard horizontal scroll thinness - options
+            {
+                "class": "puck_control",
+                "attributes": ["horizontal"],
+                "settings": ["theme_agila_horizontal_scrollbar_thinner"],
+                "content_margin": [10,2]
+            },
+            {
+                "class": "puck_control",
+                "attributes": ["horizontal"],
+                "settings": ["theme_agila_horizontal_scrollbar_thinnest"],
+                "content_margin": [10,1]
+            },
+            {
+                "class": "puck_control",
+                "attributes": ["horizontal"],
+                "settings": ["theme_agila_horizontal_scrollbar_invisible"],
+                "content_margin": [10,0]
+            },
+
+
+//------------------------------------------------------------------------------
+// OVERLAY SCROLLBARS
+//------------------------------------------------------------------------------
+    //Overlay toggle scroll bar
+    {
+        "class": "scroll_area_control",
+        "settings": ["overlay_scroll_bars"],
+        "overlay": true
+    },
+    {
+        "class": "scroll_area_control",
+        "settings": ["!overlay_scroll_bars"],
+        "overlay": false
+    },
+    //Overlay vertical scroll bar
+    {
+        "class": "scroll_bar_control",
+        "settings": ["overlay_scroll_bars"],
+        "layer0.tint": [252, 240, 209], //overlay scrollbar
+        "layer0.inner_margin": [0, 5],
+        "layer0.opacity": 0,
+        "blur": true
+    },
+    //Overlay horizontal scroll bar
+    {
+        "class": "scroll_bar_control",
+        "settings": ["overlay_scroll_bars"],
+        "attributes": ["horizontal"],
+        "layer0.inner_margin": [5, 0],
+        "layer0.opacity": 0,
+        "blur": true
+    },
+    //Overlay vertical puck
+    {
+        "class": "puck_control",
+        "settings": ["overlay_scroll_bars"],
+        "layer0.texture": "",
+        "layer0.inner_margin": [0, 5],
+        "content_margin": [2, 12],
+        "blur": true
+    },
+    //Overlay horizontal puck
+    {
+        "class": "puck_control",
+        "settings": ["overlay_scroll_bars"],
+        "attributes": ["horizontal"],
+        "layer0.texture": "",
+        "layer0.inner_margin": [5, 0],
+        "content_margin": [12, 2],
+        "blur": true
+    },
+    //Overlay light puck (for dark content)
+    {
+        "class": "puck_control",
+        "settings": ["overlay_scroll_bars"],
+        "attributes": ["dark"],
+        "layer0.tint": [159, 154, 157] //overlay scrollbar puck
+
+    },
+    //Overlay light horizontal puck (for dark content)
+    {
+        "class": "puck_control",
+        "settings": ["overlay_scroll_bars"],
+        "attributes": ["horizontal", "dark"],
+        "layer0.tint": [159, 154, 157] //overlay scrollbar puck
+    },
+
+
+//------------------------------------------------------------------------------
+// EMPTY WINDOW BACKGROUND
+//------------------------------------------------------------------------------
+    {
+        "class": "sheet_container_control",
+        "layer0.tint": [252, 240, 209], //empty window
+        "layer0.opacity": 1.0
+    },
+
+
+//------------------------------------------------------------------------------
+// GRID LAYOUT
+//------------------------------------------------------------------------------
+    {
+        "class": "grid_layout_control",
+        "border_size": 1,
+        "border_color": [252, 240, 209] //grid layout
+    },
+
+
+//------------------------------------------------------------------------------
+// MINI MAP
+//------------------------------------------------------------------------------
+    {
+        "class": "minimap_control",
+        "settings": ["always_show_minimap_viewport"],
+        "viewport_color": [255, 255, 255, 15], //minimap control
+        "viewport_opacity": 1.0
+    },
+    {
+        "class": "minimap_control",
+        "settings": ["!always_show_minimap_viewport"],
+        "viewport_color": [255, 255, 255, 15], //minimap control
+        "viewport_opacity": { "target": 0.0, "speed": 10.0, "interpolation": "smoothstep" }
+    },
+    {
+        "class": "minimap_control",
+        "attributes": ["hover"],
+        "settings": ["!always_show_minimap_viewport"],
+        "viewport_opacity": 1.0
+    },
+
+
+//------------------------------------------------------------------------------
+// DIALOG
+//------------------------------------------------------------------------------
+    {
+        "class": "dialog",
+        "layer0.tint": [252, 240, 209], //dialog
+        "layer0.opacity": 1.0
+    },
+
+
+//------------------------------------------------------------------------------
+// PROGRESS BAR
+//------------------------------------------------------------------------------
+    {
+        "class": "progress_bar_control",
+        "layer0.tint": [252, 240, 209], //progress bar
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "progress_gauge_control",
+        "layer0.tint": [159, 154, 157], //progress gauge control
+        "layer0.opacity": 1.0,
+        "content_margin": [0, 6]
+    },
+
+
+//------------------------------------------------------------------------------
+// LABELS
+//------------------------------------------------------------------------------
+    // General labels
+    {
+        "class": "label_control",
+        "color": [159, 154, 157] //label default
+    },
+    // Text field labels
+    {
+        "class": "label_control",
+        "parents": [{"class": "panel_control"}]
+    },
+    // Button labels
+    {
+        "class": "label_control",
+        "parents": [{"class": "button_control"}],
+        "font.bold": false,
+        "font.size": 14,
+        "color": [170, 170, 170] //button labels
+    },
+
+
+//------------------------------------------------------------------------------
+// TOOLTIP
+//------------------------------------------------------------------------------
+    // Tooltip container
+    {
+        "class": "tool_tip_control",
+        "layer0.tint": [252, 240, 209], //tooltip background
+        "layer0.inner_margin": [1, 1],
+        "layer0.opacity": 1.0,
+        "content_margin": [8, 6]
+    },
+    // Tooltip content
+    {
+        "class": "tool_tip_label_control",
+        "color": [134, 145, 165] //tooltip text
+    },
+
+
+//------------------------------------------------------------------------------
+// SIDEBAR
+//------------------------------------------------------------------------------
+    //Sidebar container
+    {
+        "class": "sidebar_container",
+        "layer0.tint": [252, 240, 209], //sidebar background
+        "layer0.opacity": 1.0,
+        "layer0.draw_center": false,
+        "layer0.inner_margin": 0,
+        "content_margin": [0, 15, 0, 0]
+    },
+    //Sidebar tree
+    {
+        "class": "sidebar_tree",
+        "row_padding": [20, 9],
+        "indent": 18,
+        "indent_offset": 18,
+        "indent_top_level": false,
+        "layer0.tint": [252, 240, 209], //sidebar tree
+        "layer0.opacity": 1.0,
+        "dark_content": false,
+    },
+            //Sidebar tree - options
+            {
+                "class": "sidebar_tree",
+                "settings": ["theme_agila_sidebar_small"],
+                "row_padding": [20, 8]
+            },
+            {
+                "class": "sidebar_tree",
+                "settings": ["theme_agila_sidebar_medium"],
+                "row_padding": [20, 9]
+            },
+            {
+                "class": "sidebar_tree",
+                "settings": ["theme_agila_sidebar_large"],
+                "row_padding": [20, 11]
+            },
+    //Sidebar rows
+    {
+        "class": "tree_row",
+        "layer0.tint": [250, 234, 190], //selected sidebar row state
+        "layer0.opacity": 0,
+        "layer0.inner_margin": [1, 1]
+    },
+    //Sidebar row selected
+    {
+        "class": "tree_row",
+        "attributes": ["selected"],
+        "layer0.opacity": 1.0
+    },
+    //Sidebar heading
+    {
+        "class": "sidebar_heading",
+        "color": [170, 170, 170], //sidebar heading
+        "font.bold": true,
+        "font.size": 12
+    },
+    //Sidebar heading selected
+    {
+        "class": "sidebar_heading",
+        "parents": [{"class": "tree_row", "attributes": ["selected"]}]
+    },
+    //Sidebar entry
+    {
+        "class": "sidebar_label",
+        "color": [141, 141, 141], //sidebar entry default state
+        "font.bold": false,
+        "font.italic": false,
+        "font.size": 13
+    },
+            //Sidebar entry - options
+            {
+                "class": "sidebar_label",
+                "settings": ["theme_agila_sidebar_font_xsmall"],
+                "font.size": 11
+            },
+            {
+                "class": "sidebar_label",
+                "settings": ["theme_agila_sidebar_font_small"],
+                "font.size": 12
+            },
+            {
+                "class": "sidebar_label",
+                "settings": ["theme_agila_sidebar_font_big"],
+                "font.size": 14
+            },
+    //Sidebar folder entry
+    {
+        "class": "sidebar_label",
+        "parents": [{"class": "tree_row", "attributes": ["expandable"]}],
+        "color": [141, 141, 141] //sidebar folder default state
+    },
+    {
+        "class": "sidebar_label",
+        "parents": [{"class": "tree_row", "attributes": ["hover"]}],
+        "color": [134, 145, 165] //sidebar entry hover state
+    },
+    {
+        "class": "sidebar_label",
+        "parents": [{"class": "tree_row", "attributes": ["expandable"]}],
+        "settings": ["bold_folder_labels"],
+        "font.bold": true
+    },
+    //Sidebar entry selected
+    {
+        "class": "sidebar_label",
+        "parents": [{"class": "tree_row", "attributes": ["selected"]}],
+        "color": [243, 103, 129] //sidebar entry selected state
+    },
+            //Sidebar entry selected - options
+            {
+                "class": "sidebar_label",
+                "parents": [{"class": "tree_row", "attributes": ["selected"]}],
+                "settings": ["theme_agila_sidebar_selected_entry_white"],
+                "color": [255, 255, 255] //white theme
+            },
+            {
+                "class": "sidebar_label",
+                "parents": [{"class": "tree_row", "attributes": ["selected"]}],
+                "settings": ["theme_agila_sidebar_selected_entry_gray"],
+                "color": [134, 145, 165] //gray theme
+            },
+            {
+                "class": "sidebar_label",
+                "parents": [{"class": "tree_row", "attributes": ["selected"]}],
+                "settings": ["theme_agila_sidebar_selected_entry_lightblue"],
+                "color": [69, 183, 207] //light blue theme
+            },
+            {
+                "class": "sidebar_label",
+                "parents": [{"class": "tree_row", "attributes": ["selected"]}],
+                "settings": ["theme_agila_sidebar_selected_entry_yellow"],
+                "color": [254, 201, 106] //yellow theme
+            },
+            {
+                "class": "sidebar_label",
+                "parents": [{"class": "tree_row", "attributes": ["selected"]}],
+                "settings": ["theme_agila_sidebar_selected_entry_pink"],
+                "color": [243, 103, 129] //pink theme
+            },
+    //Sidebar entry transient
+    {
+        "class": "sidebar_label",
+        "attributes": ["transient"],
+        "font.italic": true
+    },
+
+
+//------------------------------------------------------------------------------
+// SIDEBAR - OPEN FILE ICONS
+//------------------------------------------------------------------------------
+    // Sidebar file close
+    {
+        "class": "close_button",
+        "layer0.texture": "Theme - Agila/assets/file-close.png",
+        "layer0.tint": [71, 75, 83], //sidebar file close color
+        "layer0.opacity": 0,
+        "layer0.inner_margin": 0,
+        "content_margin": [8, 8]
+    },
+    {
+        "class": "close_button",
+        "parents": [{"class": "tree_row", "attributes": ["selected"]}],
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "close_button",
+        "parents": [{"class": "tree_row", "attributes": ["hover"]}],
+        "layer0.opacity": 1.0
+    },
+    // Sidebar file dirty
+    {
+        "class": "close_button",
+        "attributes": ["dirty"],
+        "layer0.texture": "Theme - Agila/assets/file-dirty.png",
+        "layer0.tint": [255, 255, 255], //sidebar file dirty close button tint
+        "layer0.opacity": 1.0
+    },
+    // Sidebar file close hover
+    {
+        "class": "close_button",
+        "attributes": ["hover"],
+        "layer0.texture": "Theme - Agila/assets/file-close.png",
+        "layer0.tint": [243, 103, 129] //sidebar file close button tint
+    },
+
+
+//------------------------------------------------------------------------------
+// SIDEBAR - GENERAL FILE ICONS
+//------------------------------------------------------------------------------
+    //Sidebar group closed
+    {
+        "class": "disclosure_button_control",
+        "content_margin": [8, 8],
+        "layer0.texture": "Theme - Agila/assets/folder.png",
+        "layer1.texture": "Theme - Agila/assets/folder-open-gray.png",
+        "layer0.tint": [255, 255, 255], //sidebar folder button tint
+        "layer0.opacity": 1.0,
+        "layer0.inner_margin": 0
+    },
+    {
+        "class": "disclosure_button_control",
+        "parents": [{"class": "tree_row", "attributes": ["hover"]}],
+        "layer0.tint": [200, 200, 200] //sidebar folder button hover state
+    },
+    {
+        "class": "disclosure_button_control",
+        "parents": [{"class": "tree_row", "attributes": ["selected"]}]
+    },
+    //Sidebar group open
+    {
+        "class": "disclosure_button_control",
+        "attributes": ["expanded"],
+        "layer0.texture": "Theme - Agila/assets/folder-open-gray.png"
+    },
+    {
+        "class": "disclosure_button_control",
+        "attributes": ["expanded"],
+        "parents": [{"class": "tree_row", "attributes": ["hover"]}]
+    },
+    {
+        "class": "disclosure_button_control",
+        "attributes": ["expanded"],
+        "parents": [{"class": "tree_row", "attributes": ["selected"]}],
+        "layer0.texture": "Theme - Agila/assets/folder-open-gray.png"
+    },
+    //Hide sidebar folder
+    {
+        "class": "icon_folder",
+        "layer0.opacity": 0,
+        "content_margin": [0, 0]
+    },
+    //Sidebar file icons
+    {
+        "class": "icon_file_type",
+        // layer0.texture is filled in by code with the relevant icon name
+        "layer0.tint": [255, 255, 255], //sidebar icon tints
+        "layer0.opacity": 1.0,
+        "content_margin": [8, 8]
+    },
+
+
+//------------------------------------------------------------------------------
+// STANDARD TEXT BUTTONS - Find, Find Prev, Find All
+//------------------------------------------------------------------------------
+    //Default button state
+    {
+        "class": "button_control",
+        "content_margin": [10, 8],
+        "min_size": [64, 0],
+        "layer0.texture": "",
+        "layer0.tint": [250, 234, 190], //find buttons
+        "layer0.opacity": 1.0,
+        "layer0.inner_margin": [8, 8]
+    },
+    //Hover button state
+    {
+        "class": "button_control",
+        "attributes": ["hover"],
+        "layer0.tint": [252, 240, 209] //find buttons hover state
+    },
+    //Pressed button state
+    {
+        "class": "button_control",
+        "attributes": ["pressed"],
+        "layer0.tint": [252, 240, 209], //find buttons pressed state
+    },
+
+
+//------------------------------------------------------------------------------
+// TEXT INPUT FIELD
+//------------------------------------------------------------------------------
+    //Text input field item
+    {
+        "class": "text_line_control",
+        "layer0.texture": "",
+        "layer0.tint": [250, 234, 190], //text input field border
+        "layer0.opacity": 1.0,
+        "content_margin": [8, 2]
+    },
+    //Text input dropdown
+    {
+        "class": "dropdown_button_control",
+        "content_margin": [9, 9],
+        "layer0.texture": "Theme - Agila/assets/tabset-list.png",
+        "layer0.tint": [255, 255, 255], //text dropdown tint
+        "layer0.opacity": 1.0,
+        "layer0.inner_margin": [4, 4]
+    },
+    {
+        "class": "dropdown_button_control",
+        "attributes": ["hover"],
+        "layer0.texture": "Theme - Agila/assets/tabset-list-hover.png",
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "dropdown_button_control",
+        "attributes": ["hover"],
+        "layer0.tint": [241, 193, 62] //text field dropdown hover state
+    },
+
+
+//------------------------------------------------------------------------------
+// PANEL BACKGROUNDS
+//------------------------------------------------------------------------------
+    //Bottom panel background
+    {
+        "class": "panel_control",
+        "layer0.texture": "",
+        "layer0.tint": [250, 234, 190], //bottom panel background
+        "layer0.inner_margin": [0, 0],
+        "layer0.opacity": 1.0,
+        "content_margin": 0
+    },
+    //Quick panel background
+    {
+        "class": "overlay_control",
+        "layer0.opacity": 1.0,
+        "layer1.texture": "",
+        "layer1.tint": [250, 234, 190], //quick panel background
+        "layer1.inner_margin": [0, 0, 0, 0],
+        "layer1.opacity": 1.0,
+        "content_margin": [0,8]
+    },
+
+//------------------------------------------------------------------------------
+// QUICK PANEL - CMD + P
+//------------------------------------------------------------------------------
+    {
+        "class": "quick_panel",
+        "row_padding": 8,
+        "layer0.tint": [250, 234, 190], //quick panel section
+        "layer0.opacity": 1.0,
+        "dark_content": true
+    },
+    {
+        "class": "quick_panel_row",
+        "layer0.texture": "",
+        "layer0.tint": [250, 234, 190], //quick panel section
+        "layer0.inner_margin": 8,
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "quick_panel_row",
+        "attributes": ["selected"],
+        "layer0.texture": "",
+        "layer0.tint": [252, 240, 209] //quick panel row selected state
+    },
+    {
+        "class": "quick_panel_label",
+        "fg": [159, 154, 157], //quick panel foreground
+        "match_fg": [180, 180, 180], //quick panel match label
+        "selected_fg": [159, 154, 157], //quick panel foreground
+        "selected_match_fg": [239, 187, 44] //quick panel selected match foreground
+    },
+    {
+        "class": "quick_panel_path_label",
+        "fg": [159, 154, 157], //quick panel foreground
+        "match_fg": [180, 180, 180], //quick panel path label
+        "selected_fg": [159, 154, 157], //quick panel foreground
+        "selected_match_fg": [180, 180, 180] //quick panel path label
+    },
+    {
+        "class": "quick_panel_score_label",
+        "fg": [159, 154, 157], //quick panel foreground
+        "selected_fg": [159, 154, 157] //quick panel foreground
+    },
+
+
+//------------------------------------------------------------------------------
+// MINI QUICK PANEL - CMD + SHIFT + P
+//------------------------------------------------------------------------------
+    {
+        "class": "mini_quick_panel_row",
+        "layer0.texture": "",
+        "layer0.tint": [250, 234, 190], //mini quick panel section
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "mini_quick_panel_row",
+        "attributes": ["selected"],
+        "layer0.texture": "",
+        "layer0.tint": [252, 240, 209] //mini quick panel row selected state
+    },
+
+
+//------------------------------------------------------------------------------
+// CODE COMPLETION DROPDOWN
+//------------------------------------------------------------------------------
+    {
+        "class": "popup_control",
+        "content_margin": [0, 0],
+        "layer0.tint": [250, 234, 190], //code completion popup background
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "auto_complete",
+        "row_padding": [4, 4]
+    },
+    {
+        "class": "auto_complete_label",
+        "fg": [159, 154, 157], //autocomplete foreground
+        "match_fg": [180, 180, 180], //autocomplete match label
+        "selected_fg": [159, 154, 157], //autocomplete foreground
+        "selected_match_fg": [239, 187, 44] //autocomplete match label
+    },
+    {
+        "class": "table_row",
+        "layer0.texture": "",
+        "layer0.tint": [252, 240, 209], //code completion table row
+        "layer0.opacity": 1.0,
+        "layer0.inner_margin": [3, 1]
+    },
+    {
+        "class": "table_row",
+        "attributes": ["selected"],
+        "layer0.opacity": 1.0
+    },
+
+
+//------------------------------------------------------------------------------
+// BOTTOM PANEL BUTTONS
+//------------------------------------------------------------------------------
+    //Button group middle
+    {
+        "class": "icon_button_control",
+        "layer0.opacity": 0,
+        "content_margin": [20,8]
+    },
+    {
+        "class": "icon_button_control",
+        "attributes": ["selected"],
+        "layer0.tint": [255, 255, 255], //icon button control
+        "layer0.opacity": 0
+    },
+    //Button group left
+    {
+        "class": "icon_button_control",
+        "attributes": ["left"]
+    },
+    {
+        "class": "icon_button_control",
+        "attributes": ["left", "selected"]
+    },
+    //Button group right
+    {
+        "class": "icon_button_control",
+        "attributes": ["right"]
+    },
+    {
+        "class": "icon_button_control",
+        "attributes": ["right", "selected"]
+    },
+    //Button single
+    {
+        "class": "icon_button_control",
+        "attributes": ["left", "right"]
+    },
+    {
+        "class": "icon_button_control",
+        "attributes": ["left", "right", "selected"]
+    },
+    //Panel close button
+    {
+        "class": "panel_close_button",
+        "content_margin": [0, 0]
+    },
+    {
+        "class": "panel_close_button",
+        "attributes": ["hover"]
+    },
+    {
+        "class": "panel_close_button",
+        "attributes": ["pressed"]
+    },
+
+
+//------------------------------------------------------------------------------
+// BOTTOM PANEL ICONS - Essentials
+//------------------------------------------------------------------------------
+    //Regex search button
+    {
+        "class": "icon_regex",
+        "layer0.texture": "Theme - Agila/assets/icon-regex.png",
+        "layer0.tint": [195, 195, 195], //bottom icon default state
+        "layer0.opacity": 1.0,
+        "content_margin": [8, 8]
+    },
+    {
+        "class": "icon_regex",
+        "parents": [{"class": "icon_button_control", "attributes": ["hover"]}],
+        "layer0.tint": [244, 205, 99] //bottom icon hover state
+    },
+    {
+        "class": "icon_regex",
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.tint": [241, 193, 62] //bottom icon selected state
+    },
+    //Case sensitive search button
+    {
+        "class": "icon_case",
+        "layer0.texture": "Theme - Agila/assets/icon-case.png",
+        "layer0.tint": [195, 195, 195], //bottom icon default state
+        "layer0.opacity": 1.0,
+        "content_margin": [8, 8]
+    },
+    {
+        "class": "icon_case",
+        "parents": [{"class": "icon_button_control", "attributes": ["hover"]}],
+        "layer0.tint": [244, 205, 99] //bottom icon hover state
+    },
+    {
+        "class": "icon_case",
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.tint": [241, 193, 62] //bottom icon selected state
+    },
+    //Match whole word search button
+    {
+        "class": "icon_whole_word",
+        "layer0.texture": "Theme - Agila/assets/icon-word.png",
+        "layer0.tint": [195, 195, 195], //bottom icon default state
+        "layer0.opacity": 1.0,
+        "content_margin": [8, 8]
+    },
+    {
+        "class": "icon_whole_word",
+        "parents": [{"class": "icon_button_control", "attributes": ["hover"]}],
+        "layer0.tint": [244, 205, 99] //bottom icon hover state
+    },
+    {
+        "class": "icon_whole_word",
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.tint": [241, 193, 62] //bottom icon selected state
+    },
+
+
+//------------------------------------------------------------------------------
+// BOTTOM PANEL ICONS - Search - Show search context & Use search buffer
+//------------------------------------------------------------------------------
+    //Show search context button
+    {
+        "class": "icon_context",
+        "layer0.texture": "Theme - Agila/assets/icon-context.png",
+        "layer0.tint": [195, 195, 195], //bottom icon default state
+        "layer0.opacity": 1.0,
+        "content_margin": [8, 8]
+    },
+    {
+        "class": "icon_context",
+        "parents": [{"class": "icon_button_control", "attributes": ["hover"]}],
+        "layer0.tint": [244, 205, 99] //bottom icon hover state
+    },
+    {
+        "class": "icon_context",
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.tint": [241, 193, 62] //bottom icon selected state
+    },
+    //Use search buffer
+    {
+        "class": "icon_use_buffer",
+        "layer0.texture": "Theme - Agila/assets/icon-buffer.png",
+        "layer0.tint": [195, 195, 195], //bottom icon default state
+        "layer0.opacity": 1.0,
+        "content_margin": [8, 8]
+    },
+    {
+        "class": "icon_use_buffer",
+        "parents": [{"class": "icon_button_control", "attributes": ["hover"]}],
+        "layer0.tint": [244, 205, 99] //bottom icon hover state
+    },
+    {
+        "class": "icon_use_buffer",
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.tint": [241, 193, 62] //bottom icon selected state
+    },
+
+
+//------------------------------------------------------------------------------
+// BOTTOM PANEL ICONS - Search - Wrap & In Selection
+//------------------------------------------------------------------------------
+    // Reverse search direction button
+    {
+        "class": "icon_reverse",
+        "layer0.texture": "Theme - Agila/assets/icon-reverse.png",
+        "layer0.tint": [195, 195, 195], //bottom icon default state
+        "layer0.opacity": 1.0,
+        "content_margin": 8
+    },
+    {
+        "class": "icon_reverse",
+        "parents": [{"class": "icon_button_control", "attributes": ["hover"]}],
+        "layer0.tint": [244, 205, 99] //bottom icon hover state
+    },
+    {
+        "class": "icon_reverse",
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.tint": [241, 193, 62] //bottom icon selected state
+    },
+    // Search wrap button
+    {
+        "class": "icon_wrap",
+        "layer0.texture": "Theme - Agila/assets/icon-wrap.png",
+        "layer0.tint": [195, 195, 195], //bottom icon default state
+        "layer0.opacity": 1.0,
+        "content_margin": [8, 8]
+    },
+    {
+        "class": "icon_wrap",
+        "parents": [{"class": "icon_button_control", "attributes": ["hover"]}],
+        "layer0.tint": [244, 205, 99] //bottom icon hover state
+    },
+    {
+        "class": "icon_wrap",
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.tint": [241, 193, 62] //bottom icon selected state
+    },
+    // Search in selection button
+    {
+        "class": "icon_in_selection",
+        "layer0.texture": "Theme - Agila/assets/icon-selection.png",
+        "layer0.tint": [195, 195, 195], //bottom icon default state
+        "layer0.opacity": 1.0,
+        "content_margin": [8, 8]
+    },
+    {
+        "class": "icon_in_selection",
+        "parents": [{"class": "icon_button_control", "attributes": ["hover"]}],
+        "layer0.tint": [244, 205, 99] //bottom icon hover state
+    },
+    {
+        "class": "icon_in_selection",
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.tint": [241, 193, 62] //bottom icon selected state
+    },
+
+
+//------------------------------------------------------------------------------
+// BOTTOM PANEL ICONS - Preserve case
+//------------------------------------------------------------------------------
+    // Preserve case button
+    {
+        "class": "icon_preserve_case",
+        "layer0.texture": "Theme - Agila/assets/icon-preserve.png",
+        "layer0.tint": [195, 195, 195], //bottom icon default state
+        "layer0.opacity": 1.0,
+        "content_margin": [8, 8]
+    },
+    {
+        "class": "icon_preserve_case",
+        "parents": [{"class": "icon_button_control", "attributes": ["hover"]}],
+        "layer0.tint": [244, 205, 99] //bottom icon hover state
+    },
+    {
+        "class": "icon_preserve_case",
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.tint": [241, 193, 62] //bottom icon selected state
+    },
+
+
+//------------------------------------------------------------------------------
+// BOTTOM PANEL ICONS - Highlight Matches
+//------------------------------------------------------------------------------
+    // Highlight results button
+    {
+        "class": "icon_highlight",
+        "layer0.texture": "Theme - Agila/assets/icon-highlight.png",
+        "layer0.tint": [195, 195, 195], //bottom icon default state
+        "layer0.opacity": 1.0,
+        "content_margin": [8, 8]
+    },
+    {
+        "class": "icon_highlight",
+        "parents": [{"class": "icon_button_control", "attributes": ["hover"]}],
+        "layer0.tint": [244, 205, 99] //bottom icon hover state
+    },
+    {
+        "class": "icon_highlight",
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.tint": [241, 193, 62] //bottom icon selected state
+    },
+
+
+//------------------------------------------------------------------------------
+// STATUS BAR
+//------------------------------------------------------------------------------
+    // Status bar container
+    {
+        "class": "status_bar",
+        "layer0.texture": "",
+        "layer0.tint": [250, 234, 190], //status bar background
+        "layer0.opacity": 1.0,
+        "layer0.inner_margin": [2, 2],
+        "content_margin": [8, 4]
+    },
+    // Status bar button
+    {
+        "class": "status_button",
+        "min_size": [100, 0]
+    },
+    // Status bar label
+    {
+        "class": "label_control",
+        "parents": [{"class": "status_bar"}],
+        "color": [159, 154, 157] //status bar text color
+    },
+
+]
