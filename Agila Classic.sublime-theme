@@ -208,7 +208,7 @@
     {
         "class": "tab_close_button",
         "content_margin": [8, 8],
-        "layer0.texture": "Theme - Agila/assets/tab-close.png",
+        "layer0.texture": "Agila Theme/assets/tab-close.png",
         "layer0.tint": [129, 93, 89], //tab close button
     },
     {
@@ -237,7 +237,7 @@
     {
         "class": "tab_close_button",
         "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
-        "layer0.texture": "Theme - Agila/assets/tab-dirty-lightblue.png",
+        "layer0.texture": "Agila Theme/assets/tab-dirty-lightblue.png",
         "layer0.opacity": 1.0,
         "layer0.inner_margin": 0
     },
@@ -246,31 +246,31 @@
                 "class": "tab_close_button",
                 "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
                 "settings": ["theme_agila_modified_tab_marker_white"],
-                "layer0.texture": "Theme - Agila/assets/tab-dirty-white.png"
+                "layer0.texture": "Agila Theme/assets/tab-dirty-white.png"
             },
             {
                 "class": "tab_close_button",
                 "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
                 "settings": ["theme_agila_modified_tab_marker_gray"],
-                "layer0.texture": "Theme - Agila/assets/tab-dirty-gray.png"
+                "layer0.texture": "Agila Theme/assets/tab-dirty-gray.png"
             },
             {
                 "class": "tab_close_button",
                 "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
                 "settings": ["theme_agila_modified_tab_marker_lightblue"],
-                "layer0.texture": "Theme - Agila/assets/tab-dirty-lightblue.png"
+                "layer0.texture": "Agila Theme/assets/tab-dirty-lightblue.png"
             },
             {
                 "class": "tab_close_button",
                 "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
                 "settings": ["theme_agila_modified_tab_marker_yellow"],
-                "layer0.texture": "Theme - Agila/assets/tab-dirty-yellow.png"
+                "layer0.texture": "Agila Theme/assets/tab-dirty-yellow.png"
             },
             {
                 "class": "tab_close_button",
                 "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
                 "settings": ["theme_agila_modified_tab_marker_pink"],
-                "layer0.texture": "Theme - Agila/assets/tab-dirty-pink.png"
+                "layer0.texture": "Agila Theme/assets/tab-dirty-pink.png"
             },
 
     // Tab highlight button
@@ -285,7 +285,7 @@
         "class": "tab_close_button",
         "settings": ["highlight_modified_tabs"],
         "parents": [{"class": "tab_control", "attributes": ["dirty", "hover"]}],
-        "layer0.texture": "Theme - Agila/assets/tab-close.png",
+        "layer0.texture": "Agila Theme/assets/tab-close.png",
         "attributes": ["hover"],
         "layer0.tint": [243, 103, 129], //tab active state hover on close button
         "layer0.opacity": 1.0
@@ -327,14 +327,14 @@
     {
         "class": "show_tabs_dropdown_button",
         "content_margin": [10,10],
-        "layer0.texture": "Theme - Agila/assets/tabset-list.png",
+        "layer0.texture": "Agila Theme/assets/tabset-list.png",
         "layer0.tint": [255, 255, 255], //tab dropdown tint
         "layer0.opacity": 1.0
     },
     {
         "class": "show_tabs_dropdown_button",
         "attributes": ["hover"],
-        "layer0.texture": "Theme - Agila/assets/tabset-list-hover.png",
+        "layer0.texture": "Agila Theme/assets/tabset-list-hover.png",
         "layer0.tint": [255, 255, 255], //tab dropdown hover state
         "layer0.opacity": 1.0
     },
@@ -342,7 +342,7 @@
     {
         "class": "scroll_tabs_left_button",
         "content_margin": [9,8,7,5],
-        "layer0.texture": "Theme - Agila/assets/tabset-left-arrow.png",
+        "layer0.texture": "Agila Theme/assets/tabset-left-arrow.png",
         "layer0.tint": [200, 200, 200], //scroll left/right button
         "layer0.inner_margin": 0,
         "layer0.opacity": 0.5
@@ -357,7 +357,7 @@
     {
         "class": "scroll_tabs_right_button",
         "content_margin": [9,8,7,5],
-        "layer0.texture": "Theme - Agila/assets/tabset-right-arrow.png",
+        "layer0.texture": "Agila Theme/assets/tabset-right-arrow.png",
         "layer0.tint": [200, 200, 200], //scroll left/right button
         "layer0.inner_margin": 0,
         "layer0.opacity": 0.5
@@ -375,7 +375,7 @@
 //------------------------------------------------------------------------------
     {
         "class": "fold_button_control",
-        "layer0.texture": "Theme - Agila/assets/fold-closed.png",
+        "layer0.texture": "Agila Theme/assets/fold-closed.png",
         "layer0.tint": [175, 175, 175], //fold button control default state
         "layer0.opacity": 1.0,
         "layer0.inner_margin": 0,
@@ -389,7 +389,7 @@
     {
         "class": "fold_button_control",
         "attributes": ["expanded"],
-        "layer0.texture": "Theme - Agila/assets/fold-open.png"
+        "layer0.texture": "Agila Theme/assets/fold-open.png"
     },
 
 
@@ -869,7 +869,7 @@
     // Sidebar file close
     {
         "class": "close_button",
-        "layer0.texture": "Theme - Agila/assets/file-close.png",
+        "layer0.texture": "Agila Theme/assets/file-close.png",
         "layer0.tint": [129, 93, 89], //sidebar file close color
         "layer0.opacity": 0,
         "layer0.inner_margin": 0,
@@ -889,7 +889,7 @@
     {
         "class": "close_button",
         "attributes": ["dirty"],
-        "layer0.texture": "Theme - Agila/assets/file-dirty.png",
+        "layer0.texture": "Agila Theme/assets/file-dirty.png",
         "layer0.tint": [255, 255, 255], //sidebar file dirty close button tint
         "layer0.opacity": 1.0
     },
@@ -897,7 +897,7 @@
     {
         "class": "close_button",
         "attributes": ["hover"],
-        "layer0.texture": "Theme - Agila/assets/file-close.png",
+        "layer0.texture": "Agila Theme/assets/file-close.png",
         "layer0.tint": [243, 103, 129] //sidebar file close button tint
     },
 
@@ -909,8 +909,8 @@
     {
         "class": "disclosure_button_control",
         "content_margin": [8, 8],
-        "layer0.texture": "Theme - Agila/assets/folder.png",
-        "layer1.texture": "Theme - Agila/assets/folder-open-gray.png",
+        "layer0.texture": "Agila Theme/assets/folder.png",
+        "layer1.texture": "Agila Theme/assets/folder-open-gray.png",
         "layer0.tint": [255, 255, 255], //sidebar folder button tint
         "layer0.opacity": 1.0,
         "layer0.inner_margin": 0
@@ -928,7 +928,7 @@
     {
         "class": "disclosure_button_control",
         "attributes": ["expanded"],
-        "layer0.texture": "Theme - Agila/assets/folder-open-gray.png"
+        "layer0.texture": "Agila Theme/assets/folder-open-gray.png"
     },
     {
         "class": "disclosure_button_control",
@@ -939,7 +939,7 @@
         "class": "disclosure_button_control",
         "attributes": ["expanded"],
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Agila/assets/folder-open-gray.png"
+        "layer0.texture": "Agila Theme/assets/folder-open-gray.png"
     },
     //Hide sidebar folder
     {
@@ -999,7 +999,7 @@
     {
         "class": "dropdown_button_control",
         "content_margin": [9, 9],
-        "layer0.texture": "Theme - Agila/assets/tabset-list.png",
+        "layer0.texture": "Agila Theme/assets/tabset-list.png",
         "layer0.tint": [255, 255, 255], //text dropdown tint
         "layer0.opacity": 1.0,
         "layer0.inner_margin": [4, 4]
@@ -1007,7 +1007,7 @@
     {
         "class": "dropdown_button_control",
         "attributes": ["hover"],
-        "layer0.texture": "Theme - Agila/assets/tabset-list-hover.png",
+        "layer0.texture": "Agila Theme/assets/tabset-list-hover.png",
         "layer0.opacity": 1.0
     },
     {
@@ -1198,7 +1198,7 @@
     //Regex search button
     {
         "class": "icon_regex",
-        "layer0.texture": "Theme - Agila/assets/icon-regex.png",
+        "layer0.texture": "Agila Theme/assets/icon-regex.png",
         "layer0.tint": [134, 145, 165], //bottom icon default state
         "layer0.opacity": 1.0,
         "content_margin": [8, 8]
@@ -1216,7 +1216,7 @@
     //Case sensitive search button
     {
         "class": "icon_case",
-        "layer0.texture": "Theme - Agila/assets/icon-case.png",
+        "layer0.texture": "Agila Theme/assets/icon-case.png",
         "layer0.tint": [134, 145, 165], //bottom icon default state
         "layer0.opacity": 1.0,
         "content_margin": [8, 8]
@@ -1234,7 +1234,7 @@
     //Match whole word search button
     {
         "class": "icon_whole_word",
-        "layer0.texture": "Theme - Agila/assets/icon-word.png",
+        "layer0.texture": "Agila Theme/assets/icon-word.png",
         "layer0.tint": [134, 145, 165], //bottom icon default state
         "layer0.opacity": 1.0,
         "content_margin": [8, 8]
@@ -1257,7 +1257,7 @@
     //Show search context button
     {
         "class": "icon_context",
-        "layer0.texture": "Theme - Agila/assets/icon-context.png",
+        "layer0.texture": "Agila Theme/assets/icon-context.png",
         "layer0.tint": [134, 145, 165], //bottom icon default state
         "layer0.opacity": 1.0,
         "content_margin": [8, 8]
@@ -1275,7 +1275,7 @@
     //Use search buffer
     {
         "class": "icon_use_buffer",
-        "layer0.texture": "Theme - Agila/assets/icon-buffer.png",
+        "layer0.texture": "Agila Theme/assets/icon-buffer.png",
         "layer0.tint": [134, 145, 165], //bottom icon default state
         "layer0.opacity": 1.0,
         "content_margin": [8, 8]
@@ -1298,7 +1298,7 @@
     // Reverse search direction button
     {
         "class": "icon_reverse",
-        "layer0.texture": "Theme - Agila/assets/icon-reverse.png",
+        "layer0.texture": "Agila Theme/assets/icon-reverse.png",
         "layer0.tint": [134, 145, 165], //bottom icon default state
         "layer0.opacity": 1.0,
         "content_margin": 8
@@ -1316,7 +1316,7 @@
     // Search wrap button
     {
         "class": "icon_wrap",
-        "layer0.texture": "Theme - Agila/assets/icon-wrap.png",
+        "layer0.texture": "Agila Theme/assets/icon-wrap.png",
         "layer0.tint": [134, 145, 165], //bottom icon default state
         "layer0.opacity": 1.0,
         "content_margin": [8, 8]
@@ -1334,7 +1334,7 @@
     // Search in selection button
     {
         "class": "icon_in_selection",
-        "layer0.texture": "Theme - Agila/assets/icon-selection.png",
+        "layer0.texture": "Agila Theme/assets/icon-selection.png",
         "layer0.tint": [134, 145, 165], //bottom icon default state
         "layer0.opacity": 1.0,
         "content_margin": [8, 8]
@@ -1357,7 +1357,7 @@
     // Preserve case button
     {
         "class": "icon_preserve_case",
-        "layer0.texture": "Theme - Agila/assets/icon-preserve.png",
+        "layer0.texture": "Agila Theme/assets/icon-preserve.png",
         "layer0.tint": [134, 145, 165], //bottom icon default state
         "layer0.opacity": 1.0,
         "content_margin": [8, 8]
@@ -1380,7 +1380,7 @@
     // Highlight results button
     {
         "class": "icon_highlight",
-        "layer0.texture": "Theme - Agila/assets/icon-highlight.png",
+        "layer0.texture": "Agila Theme/assets/icon-highlight.png",
         "layer0.tint": [134, 145, 165], //bottom icon default state
         "layer0.opacity": 1.0,
         "content_margin": [8, 8]

@@ -26,14 +26,14 @@ via [Package Control](https://packagecontrol.io/), where Agila is listed as *`Ag
 
 1. Open Command Palette using menu item *`Tools -> Command Palette...`*
 2. Choose `Package Control: Install Package`
-3. Find *`Theme - Agila`* and hit *`Enter`*
+3. Find *`Agila Theme`* and hit *`Enter`*
 
 ##### *Woooo* way
 via installing the theme manually.
 
 1. [Download the latest release .zip](https://github.com/arvi/Agila-Theme/releases)
-2. Unzip and rename folder to *`Theme - Agila`*.
-3. Move *`Theme - Agila`* folder inside the Packages directory (*`Preferences > Browse packages...`*)
+2. Unzip and rename folder to *`Agila Theme`*.
+3. Move *`Agila Theme`* folder inside the Packages directory (*`Preferences > Browse packages...`*)
 
 ---
 
@@ -45,21 +45,21 @@ don't forget to **restart Sublime Text Editor** for changes to take effect.
 #
 ```json
 "theme": "Agila.sublime-theme",
-"color_scheme": "Packages/Theme - Agila/Agila Oceanic Next.tmTheme",
+"color_scheme": "Packages/Agila Theme/Agila Oceanic Next.tmTheme",
 ```
 
 ##### Classic theme
 #
 ```json
 "theme": "Agila Classic.sublime-theme",
-"color_scheme": "Packages/Theme - Agila/Agila Classic Oceanic Next.tmTheme",
+"color_scheme": "Packages/Agila Theme/Agila Classic Oceanic Next.tmTheme",
 ```
 
 ##### Light theme
 #
 ```json
 "theme": "Agila Light.sublime-theme",
-"color_scheme": "Packages/Theme - Agila/Agila Light Solarized.tmTheme",
+"color_scheme": "Packages/Agila Theme/Agila Light Solarized.tmTheme",
 ```
 #
 
