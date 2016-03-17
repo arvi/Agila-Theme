@@ -238,6 +238,7 @@
         "class": "tab_close_button",
         "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
         "layer0.texture": "Agila Theme/assets/tab-dirty-lightblue.png",
+        "layer0.tint": [69, 183, 207], //light blue theme
         "layer0.opacity": 1.0,
         "layer0.inner_margin": 0
     },
@@ -246,31 +247,36 @@
                 "class": "tab_close_button",
                 "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
                 "settings": ["theme_agila_modified_tab_marker_white"],
-                "layer0.texture": "Agila Theme/assets/tab-dirty-white.png"
+                "layer0.texture": "Agila Theme/assets/tab-dirty-white.png",
+                "layer0.tint": [255, 255, 255] //white theme
             },
             {
                 "class": "tab_close_button",
                 "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
                 "settings": ["theme_agila_modified_tab_marker_gray"],
-                "layer0.texture": "Agila Theme/assets/tab-dirty-gray.png"
+                "layer0.texture": "Agila Theme/assets/tab-dirty-gray.png",
+                "layer0.tint": [134, 145, 165] //gray theme
             },
             {
                 "class": "tab_close_button",
                 "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
                 "settings": ["theme_agila_modified_tab_marker_lightblue"],
-                "layer0.texture": "Agila Theme/assets/tab-dirty-lightblue.png"
+                "layer0.texture": "Agila Theme/assets/tab-dirty-lightblue.png",
+                "layer0.tint": [69, 183, 207] //light blue theme
             },
             {
                 "class": "tab_close_button",
                 "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
                 "settings": ["theme_agila_modified_tab_marker_yellow"],
-                "layer0.texture": "Agila Theme/assets/tab-dirty-yellow.png"
+                "layer0.texture": "Agila Theme/assets/tab-dirty-yellow.png",
+                "layer0.tint": [254, 201, 106] //yellow theme
             },
             {
                 "class": "tab_close_button",
                 "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
                 "settings": ["theme_agila_modified_tab_marker_pink"],
-                "layer0.texture": "Agila Theme/assets/tab-dirty-pink.png"
+                "layer0.texture": "Agila Theme/assets/tab-dirty-pink.png",
+                "layer0.tint": [243, 103, 129] //pink theme
             },
 
     // Tab highlight button
@@ -300,7 +306,7 @@
         "class": "tab_label",
         "fade": true,
         "fg": [159, 154, 157], //tab label inactive state
-        "font.size": 13
+        "font.size": 11.5
     },
     //Tab label highlighted state
     {

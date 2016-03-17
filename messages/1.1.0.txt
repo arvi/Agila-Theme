@@ -1,0 +1,1 @@
+1.1.0 Fixed Error Loading Scheme path error experienced during installation via Package Control

@@ -1,0 +1,1 @@
+1.2.0 Fixed tab element font size and dirty marker tint issues seen in Windows machine.
