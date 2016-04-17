@@ -93,6 +93,12 @@ I've made some UI parts customizable e.g icon colors, sidebar items, etc.. :)
 "theme_agila_sidebar_selected_entry_pink": true,
 ```
 
+###### COMPACT TAB - REDUCED TAB HEIGHT
+#
+```json
+"theme_agila_compact_tab": true,
+```
+
 ###### MODIFIED TAB - ICON MARKER COLOR (default: light blue)
 #
 ```json

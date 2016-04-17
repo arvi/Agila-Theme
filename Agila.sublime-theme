@@ -116,7 +116,6 @@
 //                     bottom icon default state
 //
 // [69, 183, 207]  --> #45b7cf - light blue theme
-//                     scroll drag/pluck
 //
 // [254, 201, 106] --> #fec96a - yellow theme
 //
@@ -129,6 +128,9 @@
 //
 // [246,247,249]   --> #f6f7f9
 //                     bottom icon selected state
+//
+// [45, 51, 62]    --> #2d333e
+//                     scroll drag/pluck
 
 
 
@@ -146,9 +148,15 @@
         "tab_overlap": 0,
         "tab_width": 220,
         "tab_min_width": 100,
-        "tab_height": 55,
+        "tab_height": 48,
         "mouse_wheel_switch": false
     },
+            // Tab set - option
+            {
+                "class": "tabset_control",
+                "settings": ["theme_agila_compact_tab"],
+                "tab_height": 40
+            },
     {
         "class": "tabset_control",
         "settings": ["enable_tab_scrolling"],
@@ -175,8 +183,14 @@
     {
         "class": "tab_control",
         "settings": ["show_tab_close_buttons"],
-        "content_margin": [15, 18, 15, 15] //tab element text and button margin
+        "content_margin": [15, 14, 15, 15] //tab element text and button margin
     },
+            // Tab set text - option
+            {
+                "class": "tab_control",
+                "settings": ["theme_agila_compact_tab"],
+                "content_margin": [15, 13, 15, 15] //tab element text and button margin
+            },
     //Tab hover state
     {
         "class": "tab_control",
@@ -428,7 +442,7 @@
     //Standard vertical scroll puck
     {
         "class": "puck_control",
-        "layer0.tint":[69, 183, 207], //scroll drag/pluck
+        "layer0.tint":[45, 51, 62], //scroll drag/pluck
         "layer0.opacity": 1.0,
         "layer0.inner_margin": 0,
         "content_margin": [3,0],
@@ -482,7 +496,7 @@
     {
         "class": "puck_control",
         "attributes": ["horizontal"],
-        "layer0.tint":[69, 183, 207], //scroll drag/pluck
+        "layer0.tint":[45, 51, 62], //scroll drag/pluck
         "layer0.inner_margin": 0,
         "content_margin": [10,3],
         "blur": false

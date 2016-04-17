@@ -63,7 +63,7 @@
 //                     tab section background | selected sidebar row state |
 //                     find buttons | text input field border | bottom panel background |
 //                     quick panel background | quick panel section | mini quick panel section |
-//                     code completion popup background | status bar background
+//                     code completion popup background | status bar background | scroll drag/pluck
 //
 // [252, 240, 209] --> #fcf0d1
 //                     tab element background | grid layout | quick panel row selected state
@@ -101,9 +101,6 @@
 // [241, 193, 62]  --> #f1c13e
 //                     tab dropdown hover state | text field dropdown hover state | bottom icon selected state
 //
-// [246, 217, 135] --> #f6d987
-//                     scroll drag/pluck
-//
 // [170, 170, 170] --> #aaaaaa
 //                     button labels
 //
@@ -138,6 +135,7 @@
 //                     tab close button hover state | tab active state hover on close button
 //                     sidebar entry selected state | sidebar file close button tint
 
+
 //------------------------------------------------------------------------------
 // TABS
 //------------------------------------------------------------------------------
@@ -152,9 +150,15 @@
         "tab_overlap": 0,
         "tab_width": 220,
         "tab_min_width": 100,
-        "tab_height": 55,
+        "tab_height": 48,
         "mouse_wheel_switch": false
     },
+            // Tab set - option
+            {
+                "class": "tabset_control",
+                "settings": ["theme_agila_compact_tab"],
+                "tab_height": 40
+            },
     {
         "class": "tabset_control",
         "settings": ["enable_tab_scrolling"],
@@ -181,8 +185,14 @@
     {
         "class": "tab_control",
         "settings": ["show_tab_close_buttons"],
-        "content_margin": [15, 18, 15, 15] //tab element text and button margin
+        "content_margin": [15, 14, 15, 15] //tab element text and button margin
     },
+            // Tab set text - option
+            {
+                "class": "tab_control",
+                "settings": ["theme_agila_compact_tab"],
+                "content_margin": [15, 13, 15, 15] //tab element text and button margin
+            },
     //Tab hover state
     {
         "class": "tab_control",
@@ -434,7 +444,7 @@
     //Standard vertical scroll puck
     {
         "class": "puck_control",
-        "layer0.tint":[246, 217, 135], //scroll drag/pluck
+        "layer0.tint":[250, 234, 190], //scroll drag/pluck
         "layer0.opacity": 1.0,
         "layer0.inner_margin": 0,
         "content_margin": [3,0],
@@ -488,7 +498,7 @@
     {
         "class": "puck_control",
         "attributes": ["horizontal"],
-        "layer0.tint":[246, 217, 135], //scroll drag/pluck
+        "layer0.tint":[250, 234, 190], //scroll drag/pluck
         "layer0.inner_margin": 0,
         "content_margin": [10,3],
         "blur": false
