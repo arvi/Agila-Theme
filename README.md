@@ -75,6 +75,16 @@ I've made some UI parts customizable e.g icon colors, sidebar items, etc.. :)
 "theme_agila_sidebar_large": true,
 ```
 
+###### SIDEBAR HEADING (if not set, will default to theme-based color)
+#
+```json
+"theme_agila_sidebar_heading_white": true,
+"theme_agila_sidebar_heading_gray": true,
+"theme_agila_sidebar_heading_lightblue": true,
+"theme_agila_sidebar_heading_yellow": true,
+"theme_agila_sidebar_heading_pink": true,
+```
+
 ###### SIDEBAR ENTRY/ITEM FONT SIZE (if not set, will default to font size: 13)
 #
 ```json
@@ -151,6 +161,7 @@ I've made some UI parts customizable e.g icon colors, sidebar items, etc.. :)
 - [Solarized Color Scheme](https://packagecontrol.io/packages/Solarized%20Color%20Scheme) - where Light theme color scheme is based
 - [Colorhexa](http://www.colorhexa.com/) - color combinations
 - `meteor create --sample todos` - screenshot code snippet :p
+- Contributor(s): [davidmatas](https://github.com/davidmatas)
 
 ---
 ### Fun Experiments :p

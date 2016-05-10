@@ -791,7 +791,7 @@
         "font.bold": true,
         "font.size": 12
     },
-          //Sidebar heading - options
+            //Sidebar heading - options
             {
                 "class": "sidebar_heading",
                 "settings": ["theme_agila_sidebar_heading_white"],

@@ -792,6 +792,32 @@
         "font.bold": true,
         "font.size": 12
     },
+            //Sidebar heading - options
+            {
+                "class": "sidebar_heading",
+                "settings": ["theme_agila_sidebar_heading_white"],
+                "color": [255, 255, 255] //white theme
+            },
+            {
+                "class": "sidebar_heading",
+                "settings": ["theme_agila_sidebar_heading_gray"],
+                "color": [134, 145, 165] //gray theme
+            },
+            {
+                "class": "sidebar_heading",
+                "settings": ["theme_agila_sidebar_heading_lightblue"],
+                "color": [69, 183, 207] //light blue theme
+            },
+            {
+                "class": "sidebar_heading",
+                "settings": ["theme_agila_sidebar_heading_yellow"],
+                "color": [254, 201, 106] //yellow theme
+            },
+            {
+                "class": "sidebar_heading",
+                "settings": ["theme_agila_sidebar_heading_pink"],
+                "color": [243, 103, 129] //pink theme
+            },
     //Sidebar heading selected
     {
         "class": "sidebar_heading",
