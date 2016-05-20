@@ -119,6 +119,16 @@ I've made some UI parts customizable e.g icon colors, sidebar items, etc.. :)
 "theme_agila_modified_tab_marker_pink": true,
 ```
 
+###### AUTOCOMPLETE - KEYWORD COLOR (default: white)
+#
+```json
+"theme_agila_auto_complete_white": true,
+"theme_agila_auto_complete_gray": true,
+"theme_agila_auto_complete_lightblue": true,
+"theme_agila_auto_complete_yellow": true,
+"theme_agila_auto_complete_pink": true,
+```
+
 ###### SCROLLBAR COLORS
 #
 ```json

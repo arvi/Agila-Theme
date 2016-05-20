@@ -87,8 +87,7 @@
 //                     tab label active state
 //
 // [180, 180, 180] --> #b4b4b4
-//                     tab label hover state | quick panel match label |
-//                     quick panel path label | autocomplete match label
+//                     tab label hover state | quick panel path label
 //
 // [159, 154, 157] --> #9f9a9d
 //                     tab label inactive state | overlay scrollbar puck
@@ -111,7 +110,7 @@
 //                     bottom icon hover state
 //
 // [239, 187, 44]  --> #efbb2c
-//                     quick panel selected match foreground | autocomplete match label
+//                     quick panel selected match foreground | autocomplete match label | quick panel match label
 //
 // [255, 255, 255] --> #ffffff - white theme
 //                     sidebar file close color | tab inactive state close button |
@@ -1113,10 +1112,41 @@
     {
         "class": "quick_panel_label",
         "fg": [159, 154, 157], //quick panel foreground
-        "match_fg": [180, 180, 180], //quick panel match label
+        "match_fg": [239, 187, 44], //quick panel match label
         "selected_fg": [159, 154, 157], //quick panel foreground
         "selected_match_fg": [239, 187, 44] //quick panel selected match foreground
     },
+            //Autocomplete - Quick Panel - options
+            {
+                "class": "quick_panel_label",
+                "settings": ["theme_agila_auto_complete_white"],
+                "match_fg": [255, 255, 255],
+                "selected_match_fg": [255, 255, 255] //white theme
+            },
+            {
+                "class": "quick_panel_label",
+                "settings": ["theme_agila_auto_complete_gray"],
+                "match_fg": [134, 145, 165],
+                "selected_match_fg": [134, 145, 165] //gray theme
+            },
+            {
+                "class": "quick_panel_label",
+                "settings": ["theme_agila_auto_complete_lightblue"],
+                "match_fg": [69, 183, 207],
+                "selected_match_fg": [69, 183, 207] //light blue theme
+            },
+            {
+                "class": "quick_panel_label",
+                "settings": ["theme_agila_auto_complete_yellow"],
+                "match_fg": [254, 201, 106],
+                "selected_match_fg": [254, 201, 106] //yellow theme
+            },
+            {
+                "class": "quick_panel_label",
+                "settings": ["theme_agila_auto_complete_pink"],
+                "match_fg": [243, 103, 129],
+                "selected_match_fg": [243, 103, 129] //pink theme
+            },
     {
         "class": "quick_panel_path_label",
         "fg": [159, 154, 157], //quick panel foreground
@@ -1164,10 +1194,41 @@
     {
         "class": "auto_complete_label",
         "fg": [159, 154, 157], //autocomplete foreground
-        "match_fg": [180, 180, 180], //autocomplete match label
+        "match_fg": [239, 187, 44], //autocomplete match label
         "selected_fg": [159, 154, 157], //autocomplete foreground
         "selected_match_fg": [239, 187, 44] //autocomplete match label
     },
+            //Autocomplete - Code Completion - options
+            {
+                "class": "auto_complete_label",
+                "settings": ["theme_agila_auto_complete_white"],
+                "match_fg": [255, 255, 255],
+                "selected_match_fg": [255, 255, 255] //white theme
+            },
+            {
+                "class": "auto_complete_label",
+                "settings": ["theme_agila_auto_complete_gray"],
+                "match_fg": [134, 145, 165],
+                "selected_match_fg": [134, 145, 165] //gray theme
+            },
+            {
+                "class": "auto_complete_label",
+                "settings": ["theme_agila_auto_complete_lightblue"],
+                "match_fg": [69, 183, 207],
+                "selected_match_fg": [69, 183, 207] //light blue theme
+            },
+            {
+                "class": "auto_complete_label",
+                "settings": ["theme_agila_auto_complete_yellow"],
+                "match_fg": [254, 201, 106],
+                "selected_match_fg": [254, 201, 106] //yellow theme
+            },
+            {
+                "class": "auto_complete_label",
+                "settings": ["theme_agila_auto_complete_pink"],
+                "match_fg": [243, 103, 129],
+                "selected_match_fg": [243, 103, 129] //pink theme
+            },
     {
         "class": "table_row",
         "layer0.texture": "",
