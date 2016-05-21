@@ -66,8 +66,7 @@
 //                     code completion popup background | status bar background
 //
 // [37, 42, 51]    --> #252a33
-//                     tab element background | grid layout | quick panel row selected state
-//                     mini quick panel row selected state | code completion table row |
+//                     tab element background | grid layout | code completion table row |
 //                     scrollbar vertical control | scrollbar horizontal control |
 //                     scroll corner control | overlay scrollbar | empty window | dialog |
 //                     progress bar | tooltip background | sidebar background | sidebar tree |
@@ -130,6 +129,14 @@
 //
 // [45, 51, 62]    --> #2d333e
 //                     scroll drag/pluck
+//
+// [53, 61, 74]    --> #353d4a
+//                     code completion table row selected state | mini quick panel row selected state |
+//                     quick panel row selected state
+//
+// [45, 51, 62]    --> #2d333e
+//                     code completion table row hover state | mini quick panel row hover state |
+//                     quick panel row hover state
 
 
 
@@ -746,15 +753,20 @@
     //Sidebar tree
     {
         "class": "sidebar_tree",
-        "row_padding": [20, 9],
-        "indent": 18,
-        "indent_offset": 18,
+        "row_padding": [35, 9],
+        "indent": 28,
+        "indent_offset": 0,
         "indent_top_level": false,
         "layer0.tint": [37, 42, 51], //sidebar tree
         "layer0.opacity": 1.0,
         "dark_content": false,
     },
             //Sidebar tree - options
+            {
+                "class": "sidebar_tree",
+                "settings": ["theme_agila_compact_sidebar"],
+                "indent": 20
+            },
             {
                 "class": "sidebar_tree",
                 "settings": ["theme_agila_sidebar_small"],
@@ -949,47 +961,44 @@
 //------------------------------------------------------------------------------
 // SIDEBAR - GENERAL FILE ICONS
 //------------------------------------------------------------------------------
-    //Sidebar group closed
+    // Sidebar group closed
     {
-        "class": "disclosure_button_control",
+        "class": "icon_folder",
         "content_margin": [8, 8],
         "layer0.texture": "Agila Theme/assets/folder.png",
         "layer1.texture": "Agila Theme/assets/folder-open-gray.png",
         "layer0.tint": [255, 255, 255], //sidebar folder button tint
-        "layer0.opacity": 1.0,
-        "layer0.inner_margin": 0
+        "layer0.opacity": 1.0
     },
-    {
-        "class": "disclosure_button_control",
-        "parents": [{"class": "tree_row", "attributes": ["hover"]}],
-        "layer0.tint": [200, 200, 200] //sidebar folder button hover state
-    },
-    {
-        "class": "disclosure_button_control",
-        "parents": [{"class": "tree_row", "attributes": ["selected"]}]
-    },
-    //Sidebar group open
-    {
-        "class": "disclosure_button_control",
-        "attributes": ["expanded"],
-        "layer0.texture": "Agila Theme/assets/folder-open-gray.png"
-    },
-    {
-        "class": "disclosure_button_control",
-        "attributes": ["expanded"],
-        "parents": [{"class": "tree_row", "attributes": ["hover"]}]
-    },
-    {
-        "class": "disclosure_button_control",
-        "attributes": ["expanded"],
-        "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "layer0.texture": "Agila Theme/assets/folder-open-gray.png"
-    },
-    //Hide sidebar folder
     {
         "class": "icon_folder",
-        "layer0.opacity": 0,
-        "content_margin": [0, 0]
+        "parents": [{"class": "tree_row", "attributes": ["hover"]}],
+        "layer0.texture": "Agila Theme/assets/folder.png",
+        "layer0.tint": [200, 200, 200], //sidebar folder button hover state
+        "layer0.opacity": 0.8
+    },
+    {
+        "class": "icon_folder",
+        "parents": [{"class": "tree_row", "attributes": ["selected"]}],
+        "layer0.texture": "Agila Theme/assets/folder.png"
+    },
+    // Sidebar group open
+    {
+        "class": "icon_folder",
+        "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
+        "layer0.texture": "Agila Theme/assets/folder-open-gray.png"
+    },
+    {
+        "class": "icon_folder",
+        "attributes": ["expanded"],
+        "parents": [{"class": "tree_row", "attributes": ["hover", "expanded"]}],
+        "layer0.texture": "Agila Theme/assets/folder-open-gray.png"
+    },
+    {
+        "class": "icon_folder",
+        "attributes": ["expanded"],
+        "parents": [{"class": "tree_row", "attributes": ["selected", "expanded"]}],
+        "layer0.texture": "Agila Theme/assets/folder-open-gray.png"
     },
     //Sidebar file icons
     {
@@ -999,6 +1008,15 @@
         "layer0.opacity": 1.0,
         "content_margin": [8, 8]
     },
+            //Sidebar file icons - options
+            {
+                "class": "icon_file_type",
+                "settings": ["theme_agila_sidebar_light_icons"],
+                // layer0.texture is filled in by code with the relevant icon name
+                "layer0.tint": [255, 255, 255], //sidebar icon tints
+                "layer0.opacity": 1.0,
+                "content_margin": [8, 8]
+            },
 
 
 //------------------------------------------------------------------------------
@@ -1103,9 +1121,15 @@
     },
     {
         "class": "quick_panel_row",
+        "attributes": ["hover"],
+        "layer0.texture": "",
+        "layer0.tint": [45, 51, 62] //quick panel row hover state
+    },
+    {
+        "class": "quick_panel_row",
         "attributes": ["selected"],
         "layer0.texture": "",
-        "layer0.tint": [37, 42, 51] //quick panel row selected state
+        "layer0.tint": [53, 61, 74] //quick panel row selected state
     },
     {
         "class": "quick_panel_label",
@@ -1170,9 +1194,15 @@
     },
     {
         "class": "mini_quick_panel_row",
+        "attributes": ["hover"],
+        "layer0.texture": "",
+        "layer0.tint": [45, 51, 62] //mini quick panel row hover state
+    },
+    {
+        "class": "mini_quick_panel_row",
         "attributes": ["selected"],
         "layer0.texture": "",
-        "layer0.tint": [37, 42, 51] //mini quick panel row selected state
+        "layer0.tint": [53, 61, 74] //mini quick panel row selected state
     },
 
 
@@ -1187,7 +1217,7 @@
     },
     {
         "class": "auto_complete",
-        "row_padding": [4, 4]
+        "row_padding": [8, 8]
     },
     {
         "class": "auto_complete_label",
@@ -1236,8 +1266,15 @@
     },
     {
         "class": "table_row",
+        "attributes": ["hover"],
+        "layer0.opacity": 1.0,
+        "layer0.tint": [45, 51, 62], //code completion table row hover state
+    },
+    {
+        "class": "table_row",
         "attributes": ["selected"],
-        "layer0.opacity": 1.0
+        "layer0.opacity": 1.0,
+        "layer0.tint": [53, 61, 74], //code completion table row selected state
     },
 
 

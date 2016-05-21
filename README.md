@@ -5,8 +5,10 @@ Couldn't find a theme I really dig, so I tried to make my own theme based on all
 ***
 
 ## Screenshots
-*Current font settings in screenshots:
+Current font settings in screenshots:
 Font face: [__Inconsolata__](https://www.google.com/fonts/specimen/Inconsolata) | Font size: 22*
+
+Screenshots below are based on the default starting point of all Agila Themes. You can customize the UI to your liking by referring to the "Settings" section of this documentation. Enjoy! :)
 
 #### Agila Theme
 ![Screenshot](https://www.dropbox.com/s/jt3choxq6b583t7/Agila%20Theme.png?raw=1)
@@ -101,6 +103,18 @@ I've made some UI parts customizable e.g icon colors, sidebar items, etc.. :)
 "theme_agila_sidebar_selected_entry_lightblue": true,
 "theme_agila_sidebar_selected_entry_yellow": true,
 "theme_agila_sidebar_selected_entry_pink": true,
+```
+
+###### SIDEBAR LIGHT ICONS (default: dark)
+#
+```json
+"theme_agila_sidebar_light_icons": true,
+```
+
+###### SIDEBAR COMPACT TREE STRUCTURE - NO INDENTATION
+#
+```json
+"theme_agila_compact_sidebar": true,
 ```
 
 ###### COMPACT TAB - REDUCED TAB HEIGHT
