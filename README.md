@@ -8,10 +8,21 @@ Couldn't find a theme I really dig, so I tried to make my own theme based on all
 Current font settings in screenshots:
 Font face: [__Inconsolata__](https://www.google.com/fonts/specimen/Inconsolata) | Font size: 22*
 
-Screenshots below are based on the default starting point of all Agila Themes. You can customize the UI to your liking by referring to the "Settings" section of this documentation. Enjoy! :)
+Screenshots below are based on the default starting point of all Agila Themes. 
+
+You can customize the UI to your liking _(e.g camouflage workspace with the color scheme background, sidebar, tab, autocomplete, and scrollbar setup/color preferences)_ by referring to the **"[Settings](#settings)"** section of this documentation. Enjoy! :)
 
 #### Agila Theme
 ![Screenshot](https://www.dropbox.com/s/jt3choxq6b583t7/Agila%20Theme.png?raw=1)
+
+#### Agila Origin Theme
+![Screenshot](https://www.dropbox.com/s/wuhcxftbw1nk9gn/Agila%20Origin%20Oceanic%20Next%20Theme.png?raw=1)
+
+#### Agila Dracula Theme
+![Screenshot](https://www.dropbox.com/s/egklxdt86ilap4l/Agila%20Dracula%20Theme.png?raw=1)
+
+#### Agila Monokai Theme
+![Screenshot](https://www.dropbox.com/s/y10kw35wunjssxi/Agila%20Monokai%20Theme.png?raw=1)
 
 #### Agila Classic Theme
 ![Screenshot](https://www.dropbox.com/s/xlg43vr2ikxogch/Agila%20Classic%20Theme.png?raw=1)
@@ -50,6 +61,27 @@ don't forget to **restart Sublime Text Editor** for changes to take effect.
 "color_scheme": "Packages/Agila Theme/Agila Oceanic Next.tmTheme",
 ```
 
+##### Origin theme
+#
+```json
+"theme": "Agila Origin.sublime-theme",
+"color_scheme": "Packages/Agila Theme/Agila Origin Oceanic Next.tmTheme",
+```
+
+##### Dracula theme
+#
+```json
+"theme": "Agila Dracula.sublime-theme",
+"color_scheme": "Packages/Agila Theme/Agila Dracula.tmTheme",
+```
+
+##### Monokai theme
+#
+```json
+"theme": "Agila Monokai.sublime-theme",
+"color_scheme": "Packages/Agila Theme/Agila Monokai Extended.tmTheme",
+```
+
 ##### Classic theme
 #
 ```json
@@ -65,11 +97,30 @@ don't forget to **restart Sublime Text Editor** for changes to take effect.
 ```
 #
 
+Note: You can use active guide with these schemes by adding:
+```json
+"indent_guide_options":
+[
+    "draw_normal",
+    "draw_active"
+],
+```
+
 ---
 
 ### Settings
 I've made some UI parts customizable e.g icon colors, sidebar items, etc.. :)
-###### SIDEBAR SIZE (default: medium)
+##### THEME OVERRIDE
+overrides default theme sidebar, scrollbars and tab background based on theme scheme background
+```json
+"theme_agila_camouflage": true, 
+```
+overrides default theme sidebar and tab background only based on theme scheme background
+```json
+"theme_agila_camouflage_semi": true,
+```
+
+##### SIDEBAR SIZE (default: medium)
 #
 ```json
 "theme_agila_sidebar_small": true,
@@ -77,7 +128,7 @@ I've made some UI parts customizable e.g icon colors, sidebar items, etc.. :)
 "theme_agila_sidebar_large": true,
 ```
 
-###### SIDEBAR HEADING (if not set, will default to theme-based color)
+##### SIDEBAR HEADING (if not set, will default to theme-based color)
 #
 ```json
 "theme_agila_sidebar_heading_white": true,
@@ -87,7 +138,7 @@ I've made some UI parts customizable e.g icon colors, sidebar items, etc.. :)
 "theme_agila_sidebar_heading_pink": true,
 ```
 
-###### SIDEBAR ENTRY/ITEM FONT SIZE (if not set, will default to font size: 13)
+##### SIDEBAR ENTRY/ITEM FONT SIZE (if not set, will default to font size: 13)
 #
 ```json
 "theme_agila_sidebar_font_xsmall": true, //font-size: 11
@@ -95,7 +146,7 @@ I've made some UI parts customizable e.g icon colors, sidebar items, etc.. :)
 "theme_agila_sidebar_font_big": true, //font-size: 14
 ```
 
-###### SIDEBAR SELECTED ENTRY/ITEM (default: pink)
+##### SIDEBAR SELECTED ENTRY/ITEM (default: pink)
 #
 ```json
 "theme_agila_sidebar_selected_entry_white": true,
@@ -105,25 +156,25 @@ I've made some UI parts customizable e.g icon colors, sidebar items, etc.. :)
 "theme_agila_sidebar_selected_entry_pink": true,
 ```
 
-###### SIDEBAR LIGHT ICONS (default: dark)
+##### SIDEBAR LIGHT ICONS (default: dark)
 #
 ```json
 "theme_agila_sidebar_light_icons": true,
 ```
 
-###### SIDEBAR COMPACT TREE STRUCTURE - NO INDENTATION
+##### SIDEBAR COMPACT TREE STRUCTURE - NO INDENTATION
 #
 ```json
 "theme_agila_compact_sidebar": true,
 ```
 
-###### COMPACT TAB - REDUCED TAB HEIGHT
+##### COMPACT TAB - REDUCED TAB HEIGHT
 #
 ```json
 "theme_agila_compact_tab": true,
 ```
 
-###### MODIFIED TAB - ICON MARKER COLOR (default: light blue)
+##### MODIFIED TAB - ICON MARKER COLOR (default: light blue)
 #
 ```json
 "theme_agila_modified_tab_marker_white": true,
@@ -133,7 +184,7 @@ I've made some UI parts customizable e.g icon colors, sidebar items, etc.. :)
 "theme_agila_modified_tab_marker_pink": true,
 ```
 
-###### AUTOCOMPLETE - KEYWORD COLOR (default: white)
+##### AUTOCOMPLETE - KEYWORD COLOR (default: white)
 #
 ```json
 "theme_agila_auto_complete_white": true,
@@ -143,7 +194,7 @@ I've made some UI parts customizable e.g icon colors, sidebar items, etc.. :)
 "theme_agila_auto_complete_pink": true,
 ```
 
-###### SCROLLBAR COLORS
+##### SCROLLBAR COLORS
 #
 ```json
 "theme_agila_vertical_scrollbar_white": true,
@@ -162,16 +213,22 @@ I've made some UI parts customizable e.g icon colors, sidebar items, etc.. :)
 "theme_agila_horizontal_scrollbar_pink": true,
 ```
 
-###### SCROLLBAR THINNESS (if not set, will default to thin:3)
+##### SCROLLBAR THINNESS (if not set, will default to width: 4)
 #
 ```json
-"theme_agila_vertical_scrollbar_thinner": true,    //thin:2
+"theme_agila_vertical_scrollbar_thickest": true,   //width: 6
+"theme_agila_horizontal_scrollbar_thickest": true,
+
+"theme_agila_vertical_scrollbar_thicker": true,   //width: 5
+"theme_agila_horizontal_scrollbar_thicker": true,
+
+"theme_agila_vertical_scrollbar_thinner": true,    //width: 3
 "theme_agila_horizontal_scrollbar_thinner": true,
 
-"theme_agila_vertical_scrollbar_thinnest": true,   //thin:1
+"theme_agila_vertical_scrollbar_thinnest": true,   //width: 2
 "theme_agila_horizontal_scrollbar_thinnest": true,
 
-"theme_agila_vertical_scrollbar_invisible": true,  //thin: 0
+"theme_agila_vertical_scrollbar_invisible": true,  //width:  0
 "theme_agila_horizontal_scrollbar_invisible": true,
 ```
 #
@@ -183,6 +240,8 @@ I've made some UI parts customizable e.g icon colors, sidebar items, etc.. :)
 - [Neka Theme](https://packagecontrol.io/packages/Neka%20Theme) - Icons
 - [Oceanic Next Color Scheme](https://packagecontrol.io/packages/Oceanic%20Next%20Color%20Scheme) - where Default and Classic theme color scheme are based
 - [Solarized Color Scheme](https://packagecontrol.io/packages/Solarized%20Color%20Scheme) - where Light theme color scheme is based
+- [Dracula Color Scheme](https://draculatheme.com/sublime/) -  where Dracula theme color scheme is based
+- [Monokai Extended Color Scheme](https://github.com/jonschlinkert/sublime-monokai-extended) -  where Monokai theme color scheme is based
 - [Colorhexa](http://www.colorhexa.com/) - color combinations
 - `meteor create --sample todos` - screenshot code snippet :p
 - Contributor(s): [davidmatas](https://github.com/davidmatas)

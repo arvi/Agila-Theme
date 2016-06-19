@@ -77,7 +77,7 @@
 //                     tab element hover state | sidebar heading
 //
 // [36, 26, 25]    --> #241a19
-//                     tab element active state
+//                     tab element active state | theme camouflage
 //
 // [129, 93, 89]   --> #815d59
 //                     tab close button | sidebar file close color
@@ -449,7 +449,7 @@
         "layer0.tint":[72, 51, 48], //scroll drag/pluck
         "layer0.opacity": 1.0,
         "layer0.inner_margin": 0,
-        "content_margin": [3,0],
+        "content_margin": [4,0],
         "blur": false
     },
             //Standard vertical scroll puck - options
@@ -482,13 +482,23 @@
             //Standard vertical scroll thinness - options
             {
                 "class": "puck_control",
+                "settings": ["theme_agila_vertical_scrollbar_thickest"],
+                "content_margin": [6,0]
+            },
+            {
+                "class": "puck_control",
+                "settings": ["theme_agila_vertical_scrollbar_thicker"],
+                "content_margin": [5,0]
+            },
+            {
+                "class": "puck_control",
                 "settings": ["theme_agila_vertical_scrollbar_thinner"],
-                "content_margin": [2,0]
+                "content_margin": [3,0]
             },
             {
                 "class": "puck_control",
                 "settings": ["theme_agila_vertical_scrollbar_thinnest"],
-                "content_margin": [1,0]
+                "content_margin": [2,0]
             },
             {
                 "class": "puck_control",
@@ -502,7 +512,7 @@
         "attributes": ["horizontal"],
         "layer0.tint":[72, 51, 48], //scroll drag/pluck
         "layer0.inner_margin": 0,
-        "content_margin": [10,3],
+        "content_margin": [10,4],
         "blur": false
     },
             //Standard horizontal scroll puck - options
@@ -541,14 +551,26 @@
             {
                 "class": "puck_control",
                 "attributes": ["horizontal"],
+                "settings": ["theme_agila_horizontal_scrollbar_thickest"],
+                "content_margin": [10,6]
+            },
+            {
+                "class": "puck_control",
+                "attributes": ["horizontal"],
+                "settings": ["theme_agila_horizontal_scrollbar_thicker"],
+                "content_margin": [10,5]
+            },
+            {
+                "class": "puck_control",
+                "attributes": ["horizontal"],
                 "settings": ["theme_agila_horizontal_scrollbar_thinner"],
-                "content_margin": [10,2]
+                "content_margin": [10,3]
             },
             {
                 "class": "puck_control",
                 "attributes": ["horizontal"],
                 "settings": ["theme_agila_horizontal_scrollbar_thinnest"],
-                "content_margin": [10,1]
+                "content_margin": [10,2]
             },
             {
                 "class": "puck_control",
@@ -1563,4 +1585,57 @@
         "color": [159, 154, 157] //status bar text color
     },
 
+
+//------------------------------------------------------------------------------
+// CAMOUFLAGE
+//------------------------------------------------------------------------------
+    //theme camouflage
+        //full
+            {
+                "class": "tabset_control",
+                "settings": ["theme_agila_camouflage"],
+                "layer0.tint": [36, 26, 25]
+            },
+            {
+                "class": "scroll_bar_control",
+                "settings": ["theme_agila_camouflage"],
+                "layer0.tint": [36, 26, 25]
+            },
+            {
+                "class": "scroll_corner_control",
+                "settings": ["theme_agila_camouflage"],
+                "layer0.tint": [36, 26, 25]
+            },
+            {
+                "class": "puck_control",
+                "settings": ["theme_agila_camouflage"],
+                "layer0.tint": [36, 26, 25]
+            },
+            {
+                "class": "sidebar_container",
+                "settings": ["theme_agila_camouflage"],
+                "layer0.tint": [36, 26, 25]
+            },
+            {
+                "class": "sidebar_tree",
+                "settings": ["theme_agila_camouflage"],
+                "layer0.tint": [36, 26, 25]
+            },
+
+        //semi
+            {
+                "class": "tabset_control",
+                "settings": ["theme_agila_camouflage_semi"],
+                "layer0.tint": [36, 26, 25]
+            },
+            {
+                "class": "sidebar_container",
+                "settings": ["theme_agila_camouflage_semi"],
+                "layer0.tint": [36, 26, 25]
+            },
+            {
+                "class": "sidebar_tree",
+                "settings": ["theme_agila_camouflage_semi"],
+                "layer0.tint": [36, 26, 25]
+            },
 ]
