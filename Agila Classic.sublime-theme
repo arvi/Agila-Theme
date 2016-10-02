@@ -1,62 +1,5 @@
 [
 //------------------------------------------------------------------------------
-// SETTINGS - USER PREFERENCES OPTIONS
-//------------------------------------------------------------------------------
-// SIDEBAR SIZE (default: medium)
-// "theme_agila_sidebar_small": true,
-// "theme_agila_sidebar_medium": true,
-// "theme_agila_sidebar_large": true,
-//
-//
-// SIDEBAR ENTRY/ITEM FONT SIZE (if not set, will default to font size: 13)
-// "theme_agila_sidebar_font_xsmall": true, //font-size: 11
-// "theme_agila_sidebar_font_small": true, //font-size: 12
-// "theme_agila_sidebar_font_big": true, //font-size: 14
-//
-//
-// SIDEBAR SELECTED ENTRY/ITEM (default: pink)
-// "theme_agila_sidebar_selected_entry_white": true,
-// "theme_agila_sidebar_selected_entry_gray": true,
-// "theme_agila_sidebar_selected_entry_lightblue": true,
-// "theme_agila_sidebar_selected_entry_yellow": true,
-// "theme_agila_sidebar_selected_entry_pink": true,
-//
-//
-// MODIFIED TAB - ICON MARKER COLOR (default: light blue)
-// "theme_agila_modified_tab_marker_white": true,
-// "theme_agila_modified_tab_marker_gray": true,
-// "theme_agila_modified_tab_marker_lightblue": true,
-// "theme_agila_modified_tab_marker_yellow": true,
-// "theme_agila_modified_tab_marker_pink": true,
-//
-// SCROLLBAR COLORS (default: yellow)
-// "theme_agila_vertical_scrollbar_white": true,
-// "theme_agila_horizontal_scrollbar_white": true,
-//
-// "theme_agila_vertical_scrollbar_gray": true,
-// "theme_agila_horizontal_scrollbar_gray": true,
-//
-// "theme_agila_vertical_scrollbar_lightblue": true,
-// "theme_agila_horizontal_scrollbar_lightblue": true,
-//
-// "theme_agila_vertical_scrollbar_yellow": true,
-// "theme_agila_horizontal_scrollbar_yellow": true,
-//
-// "theme_agila_vertical_scrollbar_pink": true,
-// "theme_agila_horizontal_scrollbar_pink": true,
-//
-//
-// SCROLLBAR THINNESS (if not set, will default to thin:3)
-// "theme_agila_vertical_scrollbar_thinner": true,    //thin:2
-// "theme_agila_horizontal_scrollbar_thinner": true,
-//
-// "theme_agila_vertical_scrollbar_thinnest": true,   //thin:1
-// "theme_agila_horizontal_scrollbar_thinnest": true,
-//
-// "theme_agila_vertical_scrollbar_invisible": true,  //thin: 0
-// "theme_agila_horizontal_scrollbar_invisible": true,
-
-//------------------------------------------------------------------------------
 // COLOR PALETTES
 //------------------------------------------------------------------------------
 // [48, 34, 32]    --> #302220
@@ -103,8 +46,8 @@
 //                     scroll left/right button | sidebar folder button hover state
 //
 // [255, 255, 255] --> #ffffff - white theme
-//                     tab inactive state close button | tab label active state |
-//                     tab dropdown tint | tab dropdown hover state | fold button control hover state |
+//                     tab inactive state close button | tab dropdown tint |
+//                     tab dropdown hover state | fold button control hover state |
 //                     minimap control | sidebar file dirty close button tint |
 //                     text dropdown tint | text field dropdown hover state |
 //                     quick panel selected match foreground | icon button control |
@@ -122,7 +65,7 @@
 //
 // [243, 103, 129] --> #f36781 - pink theme
 //                     tab close button hover state | tab active state hover on close button
-//                     sidebar entry selected state | sidebar file close button tint
+//                     sidebar entry selected state | sidebar file close button tint | tab label active state
 //
 // [168,176,190]   --> #a8b0be
 //                     bottom icon hover state
@@ -335,8 +278,39 @@
     {
         "class": "tab_label",
         "parents": [{"class": "tab_control", "attributes": ["selected"]}],
-        "fg": [255, 255, 255] //tab label active state
+        "fg": [243, 103, 129] //tab label active state
     },
+            //Tab label active state - options
+            {
+                "class": "tab_label",
+                "parents": [{"class": "tab_control", "attributes": ["selected"]}],
+                "settings": ["theme_agila_active_tab_entry_white"],
+                "fg": [255, 255, 255] //white theme
+            },
+            {
+                "class": "tab_label",
+                "parents": [{"class": "tab_control", "attributes": ["selected"]}],
+                "settings": ["theme_agila_active_tab_entry_gray"],
+                "fg": [134, 145, 165] //gray theme
+            },
+            {
+                "class": "tab_label",
+                "parents": [{"class": "tab_control", "attributes": ["selected"]}],
+                "settings": ["theme_agila_active_tab_entry_lightblue"],
+                "fg": [69, 183, 207] //light blue theme
+            },
+            {
+                "class": "tab_label",
+                "parents": [{"class": "tab_control", "attributes": ["selected"]}],
+                "settings": ["theme_agila_active_tab_entry_yellow"],
+                "fg": [254, 201, 106] //yellow theme
+            },
+            {
+                "class": "tab_label",
+                "parents": [{"class": "tab_control", "attributes": ["selected"]}],
+                "settings": ["theme_agila_active_tab_entry_pink"],
+                "fg": [243, 103, 129] //pink theme
+            },
     {
         "class": "tab_label",
         "attributes": ["transient"],
@@ -1637,5 +1611,5 @@
                 "class": "sidebar_tree",
                 "settings": ["theme_agila_camouflage_semi"],
                 "layer0.tint": [36, 26, 25]
-            },
+            }
 ]

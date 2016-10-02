@@ -5,10 +5,7 @@ Couldn't find a theme I really dig, so I tried to make my own theme based on all
 ***
 
 ## Screenshots
-Current font settings in screenshots:
-Font face: [__Inconsolata__](https://www.google.com/fonts/specimen/Inconsolata) | Font size: 22*
-
-Screenshots below are based on the default starting point of all Agila Themes. 
+Screenshots below are based on the default starting point of all Agila Themes wherein _Font face: [__Inconsolata__](https://www.google.com/fonts/specimen/Inconsolata) | Font size: 21*._ 
 
 You can customize the UI to your liking _(e.g camouflage workspace with the color scheme background, sidebar, tab, autocomplete, and scrollbar setup/color preferences)_ by referring to the **"[Settings](#settings)"** section of this documentation. Enjoy! :)
 
@@ -29,6 +26,9 @@ You can customize the UI to your liking _(e.g camouflage workspace with the colo
 
 #### Agila Light Theme
 ![Screenshot](https://www.dropbox.com/s/tmjpeas5iuvotbd/Agila%20Light%20Theme.png?raw=1)
+
+#### Agila Neon Theme
+![Screenshot](https://www.dropbox.com/s/fdv9lhvqsqnmxux/Agila%20Neon%20Theme.png?raw=1)
 
 ---
 
@@ -97,6 +97,14 @@ don't forget to **restart Sublime Text Editor** for changes to take effect.
 ```
 #
 
+##### Neon theme
+#
+```json
+"theme": "Agila Neon.sublime-theme",
+"color_scheme": "Packages/Agila Theme/Agila Neon Monocyanide.tmTheme",
+```
+#
+
 Note: You can use active guide with these schemes by adding:
 ```json
 "indent_guide_options":
@@ -110,6 +118,7 @@ Note: You can use active guide with these schemes by adding:
 
 ### Settings
 I've made some UI parts customizable e.g icon colors, sidebar items, etc.. :)
+
 ##### THEME OVERRIDE
 overrides default theme sidebar, scrollbars and tab background based on theme scheme background
 ```json
@@ -128,7 +137,7 @@ overrides default theme sidebar and tab background only based on theme scheme ba
 "theme_agila_sidebar_large": true,
 ```
 
-##### SIDEBAR HEADING (if not set, will default to theme-based color)
+##### SIDEBAR HEADING (default: theme-based color)
 #
 ```json
 "theme_agila_sidebar_heading_white": true,
@@ -138,7 +147,7 @@ overrides default theme sidebar and tab background only based on theme scheme ba
 "theme_agila_sidebar_heading_pink": true,
 ```
 
-##### SIDEBAR ENTRY/ITEM FONT SIZE (if not set, will default to font size: 13)
+##### SIDEBAR ENTRY/ITEM FONT SIZE (default: 13)
 #
 ```json
 "theme_agila_sidebar_font_xsmall": true, //font-size: 11
@@ -174,6 +183,16 @@ overrides default theme sidebar and tab background only based on theme scheme ba
 "theme_agila_compact_tab": true,
 ```
 
+##### ACTIVE TAB - TEXT COLOR (default: pink)
+#
+```json
+"theme_agila_active_tab_entry_white": true,
+"theme_agila_active_tab_entry_gray": true,
+"theme_agila_active_tab_entry_lightblue": true,
+"theme_agila_active_tab_entry_yellow": true,
+"theme_agila_active_tab_entry_pink": true,
+```
+
 ##### MODIFIED TAB - ICON MARKER COLOR (default: light blue)
 #
 ```json
@@ -194,7 +213,7 @@ overrides default theme sidebar and tab background only based on theme scheme ba
 "theme_agila_auto_complete_pink": true,
 ```
 
-##### SCROLLBAR COLORS
+##### SCROLLBAR COLORS (default: theme based color)
 #
 ```json
 "theme_agila_vertical_scrollbar_white": true,
@@ -213,7 +232,7 @@ overrides default theme sidebar and tab background only based on theme scheme ba
 "theme_agila_horizontal_scrollbar_pink": true,
 ```
 
-##### SCROLLBAR THINNESS (if not set, will default to width: 4)
+##### SCROLLBAR THINNESS (default: 4)
 #
 ```json
 "theme_agila_vertical_scrollbar_thickest": true,   //width: 6
@@ -233,6 +252,11 @@ overrides default theme sidebar and tab background only based on theme scheme ba
 ```
 #
 ---
+### My Sublime Settings :p
+##### **https://gist.github.com/arvi/b71cd26b7a20944a7d53607213d56c20**
+#
+#
+---
 ### Thanks to
 - [Preap Theme](https://packagecontrol.io/packages/Preap) - UI inspiration and .sublime-theme source code :)
 - [Spacegray Theme](http://kkga.github.io/spacegray) - UI inspiration and .sublime-theme source code :)
@@ -240,8 +264,9 @@ overrides default theme sidebar and tab background only based on theme scheme ba
 - [Neka Theme](https://packagecontrol.io/packages/Neka%20Theme) - Icons
 - [Oceanic Next Color Scheme](https://packagecontrol.io/packages/Oceanic%20Next%20Color%20Scheme) - where Default and Classic theme color scheme are based
 - [Solarized Color Scheme](https://packagecontrol.io/packages/Solarized%20Color%20Scheme) - where Light theme color scheme is based
-- [Dracula Color Scheme](https://draculatheme.com/sublime/) -  where Dracula theme color scheme is based
-- [Monokai Extended Color Scheme](https://github.com/jonschlinkert/sublime-monokai-extended) -  where Monokai theme color scheme is based
+- [Dracula Color Scheme](https://draculatheme.com/sublime/)
+- [Monokai Extended Color Scheme](https://github.com/jonschlinkert/sublime-monokai-extended)
+- [Monocyanide Color Scheme](https://github.com/Centril/sublime-monocyanide-colorscheme)
 - [Colorhexa](http://www.colorhexa.com/) - color combinations
 - `meteor create --sample todos` - screenshot code snippet :p
 - Contributor(s): [davidmatas](https://github.com/davidmatas)
