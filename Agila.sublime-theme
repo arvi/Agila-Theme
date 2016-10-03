@@ -765,6 +765,16 @@
             },
             {
                 "class": "sidebar_tree",
+                "settings": ["theme_agila_sidebar_mini"],
+                "row_padding": [20, 5]
+            },
+            {
+                "class": "sidebar_tree",
+                "settings": ["theme_agila_sidebar_xsmall"],
+                "row_padding": [20, 7]
+            },
+            {
+                "class": "sidebar_tree",
                 "settings": ["theme_agila_sidebar_small"],
                 "row_padding": [20, 8]
             },

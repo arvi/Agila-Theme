@@ -21,6 +21,9 @@ You can customize the UI to your liking _(e.g camouflage workspace with the colo
 #### Agila Monokai Theme
 ![Screenshot](https://www.dropbox.com/s/y10kw35wunjssxi/Agila%20Monokai%20Theme.png?raw=1)
 
+#### Agila Cobalt Theme
+![Screenshot](https://www.dropbox.com/s/uh2cdicqe75onki/Agila%20Cobalt%20Theme.png?raw=1)
+
 #### Agila Classic Theme
 ![Screenshot](https://www.dropbox.com/s/xlg43vr2ikxogch/Agila%20Classic%20Theme.png?raw=1)
 
@@ -82,6 +85,13 @@ don't forget to **restart Sublime Text Editor** for changes to take effect.
 "color_scheme": "Packages/Agila Theme/Agila Monokai Extended.tmTheme",
 ```
 
+##### Cobalt theme
+#
+```json
+"theme": "Agila Cobalt.sublime-theme",
+"color_scheme": "Packages/Agila Theme/Agila Cobalt.tmTheme",
+```
+
 ##### Classic theme
 #
 ```json
@@ -129,9 +139,17 @@ overrides default theme sidebar and tab background only based on theme scheme ba
 "theme_agila_camouflage_semi": true,
 ```
 
-##### SIDEBAR SIZE (default: medium)
+##### SIDEBAR COMPACT TREE STRUCTURE - NO INDENTATION
 #
 ```json
+"theme_agila_compact_sidebar": true,
+```
+
+##### SIDEBAR TREE SIZE (default: medium)
+#
+```json
+"theme_agila_sidebar_mini": true,
+"theme_agila_sidebar_xsmall": true,
 "theme_agila_sidebar_small": true,
 "theme_agila_sidebar_medium": true,
 "theme_agila_sidebar_large": true,
@@ -169,12 +187,6 @@ overrides default theme sidebar and tab background only based on theme scheme ba
 #
 ```json
 "theme_agila_sidebar_light_icons": true,
-```
-
-##### SIDEBAR COMPACT TREE STRUCTURE - NO INDENTATION
-#
-```json
-"theme_agila_compact_sidebar": true,
 ```
 
 ##### COMPACT TAB - REDUCED TAB HEIGHT
@@ -267,6 +279,7 @@ overrides default theme sidebar and tab background only based on theme scheme ba
 - [Dracula Color Scheme](https://draculatheme.com/sublime/)
 - [Monokai Extended Color Scheme](https://github.com/jonschlinkert/sublime-monokai-extended)
 - [Monocyanide Color Scheme](https://github.com/Centril/sublime-monocyanide-colorscheme)
+- [Cobalt2 Scheme](https://github.com/wesbos/cobalt2)
 - [Colorhexa](http://www.colorhexa.com/) - color combinations
 - `meteor create --sample todos` - screenshot code snippet :p
 - Contributor(s): [davidmatas](https://github.com/davidmatas)

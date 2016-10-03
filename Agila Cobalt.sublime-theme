@@ -2,25 +2,26 @@
 //------------------------------------------------------------------------------
 // COLOR PALETTES
 //------------------------------------------------------------------------------
-// [44, 44, 44]    --> #2c2c2c
+// [30, 64, 88]    --> #1e4058
 //                     tab section background | selected sidebar row state |
 //                     find buttons | text input field border | bottom panel background |
 //                     quick panel background | quick panel section | mini quick panel section |
 //                     code completion popup background | status bar background
 //
-// [47, 47, 47]    --> #2f2f2f
+// [32, 67, 92]   -->  #20435c
 //                     tab element background | grid layout | code completion table row |
 //                     scrollbar vertical control | scrollbar horizontal control |
 //                     scroll corner control | overlay scrollbar | empty window | dialog |
-//                     progress bar | tooltip background | sidebar background | sidebar tree
+//                     progress bar | tooltip background | sidebar background | sidebar tree |
+//                     find buttons hover state | find buttons pressed state
 //
-// [60, 60, 60]    --> #3c3c3c
-//                     tab element hover state
+// [42, 88, 121]    --> #2a5879
+//                     tab element hover state | sidebar heading
 //
-// [34, 34, 34]    --> #222222
+// [25, 53, 73]    --> #193549
 //                     tab element active state | theme camouflage
 //
-// [73, 73, 73]    --> #494949
+// [52, 109, 150]  -->  #346d96
 //                     tab close button | sidebar file close color
 //
 // [225, 225, 225] --> #e1e1e1
@@ -29,15 +30,15 @@
 // [190, 190, 190] --> #bebebe
 //                     sidebar entry default state
 //
-// [180, 180, 180] --> #b4b4b4
+// [169, 195, 210] --> #a9c3d2
 //                     tab label hover state | quick panel path label
 //
-// [159, 154, 157] --> #9f9a9d
+// [131, 168, 190] --> #83a8be
 //                     tab label inactive state | overlay scrollbar puck
 //                     progress gauge control | label default | sidebar icon tints |
 //                     quick panel foreground | autocomplete foreground | status bar text color
 //
-// [200, 200, 200] --> #c8c8c8
+// [144, 177, 197] --> #90b1c5
 //                     scroll left/right button | sidebar folder button hover state
 //
 // [255, 255, 255] --> #ffffff - white theme
@@ -48,6 +49,13 @@
 //                     quick panel selected match foreground | icon button control |
 //                     sidebar folder button tint | autocomplete match label | quick panel match label
 //
+// [175, 175, 175] --> #afafaf
+//                     fold button control default state
+//
+// [143, 177, 197] --> #8fb1c5
+//                     button labels | tooltip text | sidebar entry hover state |
+//                     bottom icon default state
+//
 // [134, 145, 165] --> #8691a5 - gray theme
 //
 // [69, 183, 207]  --> #45b7cf - light blue theme
@@ -56,28 +64,21 @@
 //
 // [243, 103, 129] --> #f36781 - pink theme
 //                     tab close button hover state | tab active state hover on close button
-//                     sidebar entry selected state | sidebar file close button tint | tab label active state
+//                     sidebar entry selected state | sidebar file close button tint |  tab label active state
 //
-// [90, 90, 90]    --> #5a5a5a
-//                     button labels | tooltip text | sidebar entry hover state
-//
-// [116, 116, 116] --> #747474 | sidebar heading
-//                     bottom icon default state
-//
-// [146, 146, 146] --> #929292
+// [193, 212, 223] --> #c1d4df
 //                     bottom icon hover state
 //
-// [175, 175, 175] --> #afafaf
-//                     bottom icon selected state | fold button control default state
+// [219, 230, 236]   --> #dbe6ec
+//                     bottom icon selected state
 //
-// [51, 51, 51]    --> #333333
-//                     scroll drag/pluck | code completion table row hover state |
-//                     mini quick panel row hover state | quick panel row hover state |
-//                     find buttons hover state | find buttons pressed state
-//
-// [64, 64, 64]    --> #404040
+// [42, 89, 122]    --> #2a597a
 //                     code completion table row selected state | mini quick panel row selected state |
 //                     quick panel row selected state
+//
+// [37, 78, 107]   --> #254e6b
+//                     code completion table row hover state | mini quick panel row hover state |
+//                     quick panel row hover state | scroll drag/pluck
 
 
 
@@ -88,7 +89,7 @@
     {
         "class": "tabset_control",
         "layer0.texture": "",
-        "layer0.tint": [44, 44, 44], //tab section background
+        "layer0.tint": [30, 64, 88], //tab section background
         "layer0.inner_margin": 0,
         "layer0.opacity": 1.0,
         "content_margin": 0,
@@ -122,7 +123,7 @@
         "max_margin_trim": 0,
         "hit_test_level": 0.5,
         "layer0.texture": "",
-        "layer0.tint": [47, 47, 47], //tab element background
+        "layer0.tint": [32, 67, 92], //tab element background
         "layer0.inner_margin": [5, 5],
         "layer0.opacity": 1.0
     },
@@ -143,14 +144,14 @@
         "class": "tab_control",
         "attributes": ["hover"],
         "layer0.texture": "",
-        "layer0.tint": [60, 60, 60], //tab element hover state
+        "layer0.tint": [42, 88, 121], //tab element hover state
     },
     //Tab active state
     {
         "class": "tab_control",
         "attributes": ["selected"],
         "layer0.texture": "",
-        "layer0.tint": [34, 34, 34] //tab element active state
+        "layer0.tint": [25, 53, 73] //tab element active state
     },
     //Tab dirty state (close button hidden)
     {
@@ -169,7 +170,7 @@
         "class": "tab_close_button",
         "content_margin": [8, 8],
         "layer0.texture": "Agila Theme/assets/tab-close.png",
-        "layer0.tint": [73, 73, 73], //tab close button
+        "layer0.tint": [52, 109, 150], //tab close button
     },
     {
         "class": "tab_close_button",
@@ -265,14 +266,14 @@
     {
         "class": "tab_label",
         "fade": true,
-        "fg": [159, 154, 157], //tab label inactive state
+        "fg": [131, 168, 190], //tab label inactive state
         "font.size": 11.5
     },
     //Tab label highlighted state
     {
         "class": "tab_label",
         "parents": [{"class": "tab_control", "attributes": ["hover"]}],
-        "fg": [180, 180, 180] //tab label hover state
+        "fg": [169, 195, 210] //tab label hover state
     },
     //Tab label active state
     {
@@ -340,14 +341,14 @@
         "class": "scroll_tabs_left_button",
         "content_margin": [9,8,7,5],
         "layer0.texture": "Agila Theme/assets/tabset-left-arrow.png",
-        "layer0.tint": [200, 200, 200], //scroll left/right button
+        "layer0.tint": [144, 177, 197], //scroll left/right button
         "layer0.inner_margin": 0,
         "layer0.opacity": 0.5
     },
     {
         "class": "scroll_tabs_left_button",
         "attributes": ["hover"],
-        "layer0.tint": [200, 200, 200], //scroll left/right button
+        "layer0.tint": [144, 177, 197], //scroll left/right button
         "layer0.opacity": 1.0
     },
     // Tab scroll right
@@ -355,14 +356,14 @@
         "class": "scroll_tabs_right_button",
         "content_margin": [9,8,7,5],
         "layer0.texture": "Agila Theme/assets/tabset-right-arrow.png",
-        "layer0.tint": [200, 200, 200], //scroll left/right button
+        "layer0.tint": [144, 177, 197], //scroll left/right button
         "layer0.inner_margin": 0,
         "layer0.opacity": 0.5
     },
     {
         "class": "scroll_tabs_right_button",
         "attributes": ["hover"],
-        "layer0.tint": [200, 200, 200], //scroll tab left/right button
+        "layer0.tint": [144, 177, 197], //scroll tab left/right button
         "layer0.opacity": 1.0
     },
 
@@ -396,7 +397,7 @@
     //Standard vertical scroll bar
     {
         "class": "scroll_bar_control",
-        "layer0.tint": [47, 47, 47], //scrollbar vertical control
+        "layer0.tint": [32, 67, 92], //scrollbar vertical control
         "layer0.opacity": 1.0,
         "layer0.inner_margin": 0,
         "blur": true
@@ -405,7 +406,7 @@
     {
         "class": "scroll_bar_control",
         "attributes": ["horizontal"],
-        "layer0.tint": [47, 47, 47], //scrollbar horizontal control
+        "layer0.tint": [32, 67, 92], //scrollbar horizontal control
         "layer0.opacity": 1.0,
         "layer0.inner_margin": 0,
         "blur": true
@@ -413,14 +414,14 @@
     //Standard scroll bar corner
     {
         "class": "scroll_corner_control",
-        "layer0.tint":[47, 47, 47], //scroll corner control
+        "layer0.tint":[32, 67, 92], //scroll corner control
         "layer0.inner_margin": 0,
         "layer0.opacity": 1.0
     },
     //Standard vertical scroll puck
     {
         "class": "puck_control",
-        "layer0.tint":[51, 51, 51], //scroll drag/pluck
+        "layer0.tint":[37, 78, 107], //scroll drag/pluck
         "layer0.opacity": 1.0,
         "layer0.inner_margin": 0,
         "content_margin": [4,0],
@@ -484,7 +485,7 @@
     {
         "class": "puck_control",
         "attributes": ["horizontal"],
-        "layer0.tint":[51, 51, 51], //scroll drag/pluck
+        "layer0.tint":[37, 78, 107], //scroll drag/pluck
         "layer0.inner_margin": 0,
         "content_margin": [10,4],
         "blur": false
@@ -572,7 +573,7 @@
     {
         "class": "scroll_bar_control",
         "settings": ["overlay_scroll_bars"],
-        "layer0.tint": [47, 47, 47], //overlay scrollbar
+        "layer0.tint": [32, 67, 92], //overlay scrollbar
         "layer0.inner_margin": [0, 5],
         "layer0.opacity": 0,
         "blur": true
@@ -610,7 +611,7 @@
         "class": "puck_control",
         "settings": ["overlay_scroll_bars"],
         "attributes": ["dark"],
-        "layer0.tint": [159, 154, 157] //overlay scrollbar puck
+        "layer0.tint": [131, 168, 190] //overlay scrollbar puck
 
     },
     //Overlay light horizontal puck (for dark content)
@@ -618,7 +619,7 @@
         "class": "puck_control",
         "settings": ["overlay_scroll_bars"],
         "attributes": ["horizontal", "dark"],
-        "layer0.tint": [159, 154, 157] //overlay scrollbar puck
+        "layer0.tint": [131, 168, 190] //overlay scrollbar puck
     },
 
 
@@ -627,7 +628,7 @@
 //------------------------------------------------------------------------------
     {
         "class": "sheet_container_control",
-        "layer0.tint": [47, 47, 47], //empty window
+        "layer0.tint": [32, 67, 92], //empty window
         "layer0.opacity": 1.0
     },
 
@@ -638,7 +639,7 @@
     {
         "class": "grid_layout_control",
         "border_size": 1,
-        "border_color": [47, 47, 47] //grid layout
+        "border_color": [32, 67, 92] //grid layout
     },
 
 
@@ -670,7 +671,7 @@
 //------------------------------------------------------------------------------
     {
         "class": "dialog",
-        "layer0.tint": [47, 47, 47], //dialog
+        "layer0.tint": [32, 67, 92], //dialog
         "layer0.opacity": 1.0
     },
 
@@ -680,12 +681,12 @@
 //------------------------------------------------------------------------------
     {
         "class": "progress_bar_control",
-        "layer0.tint": [47, 47, 47], //progress bar
+        "layer0.tint": [32, 67, 92], //progress bar
         "layer0.opacity": 1.0
     },
     {
         "class": "progress_gauge_control",
-        "layer0.tint": [159, 154, 157], //progress gauge control
+        "layer0.tint": [131, 168, 190], //progress gauge control
         "layer0.opacity": 1.0,
         "content_margin": [0, 6]
     },
@@ -697,7 +698,7 @@
     // General labels
     {
         "class": "label_control",
-        "color": [159, 154, 157] //label default
+        "color": [131, 168, 190] //label default
     },
     // Text field labels
     {
@@ -710,7 +711,7 @@
         "parents": [{"class": "button_control"}],
         "font.bold": false,
         "font.size": 14,
-        "color": [90, 90, 90] //button labels
+        "color": [143, 177, 197] //button labels
     },
 
 
@@ -720,7 +721,7 @@
     // Tooltip container
     {
         "class": "tool_tip_control",
-        "layer0.tint": [47, 47, 47], //tooltip background
+        "layer0.tint": [32, 67, 92], //tooltip background
         "layer0.inner_margin": [1, 1],
         "layer0.opacity": 1.0,
         "content_margin": [8, 6]
@@ -728,7 +729,7 @@
     // Tooltip content
     {
         "class": "tool_tip_label_control",
-        "color": [90, 90, 90] //tooltip text
+        "color": [143, 177, 197] //tooltip text
     },
 
 
@@ -738,7 +739,7 @@
     //Sidebar container
     {
         "class": "sidebar_container",
-        "layer0.tint": [47, 47, 47], //sidebar background
+        "layer0.tint": [32, 67, 92], //sidebar background
         "layer0.opacity": 1.0,
         "layer0.draw_center": false,
         "layer0.inner_margin": 0,
@@ -751,7 +752,7 @@
         "indent": 28,
         "indent_offset": 0,
         "indent_top_level": false,
-        "layer0.tint": [47, 47, 47], //sidebar tree
+        "layer0.tint": [32, 67, 92], //sidebar tree
         "layer0.opacity": 1.0,
         "dark_content": false,
     },
@@ -789,7 +790,7 @@
     //Sidebar rows
     {
         "class": "tree_row",
-        "layer0.tint": [44, 44, 44], //selected sidebar row state
+        "layer0.tint": [30, 64, 88], //selected sidebar row state
         "layer0.opacity": 0,
         "layer0.inner_margin": [1, 1]
     },
@@ -802,7 +803,7 @@
     //Sidebar heading
     {
         "class": "sidebar_heading",
-        "color": [116, 116, 116], //sidebar heading
+        "color": [42, 88, 121], //sidebar heading
         "font.bold": true,
         "font.size": 12
     },
@@ -870,7 +871,7 @@
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["hover"]}],
-        "color": [90, 90, 90] //sidebar entry hover state
+        "color": [143, 177, 197] //sidebar entry hover state
     },
     {
         "class": "sidebar_label",
@@ -930,7 +931,7 @@
     {
         "class": "close_button",
         "layer0.texture": "Agila Theme/assets/file-close.png",
-        "layer0.tint": [73, 73, 73], //sidebar file close color
+        "layer0.tint": [52, 109, 150], //sidebar file close color
         "layer0.opacity": 0,
         "layer0.inner_margin": 0,
         "content_margin": [8, 8]
@@ -978,7 +979,7 @@
         "class": "icon_folder",
         "parents": [{"class": "tree_row", "attributes": ["hover"]}],
         "layer0.texture": "Agila Theme/assets/folder.png",
-        "layer0.tint": [200, 200, 200], //sidebar folder button hover state
+        "layer0.tint": [144, 177, 197], //sidebar folder button hover state
         "layer0.opacity": 0.8
     },
     {
@@ -1008,7 +1009,7 @@
     {
         "class": "icon_file_type",
         // layer0.texture is filled in by code with the relevant icon name
-        "layer0.tint": [159, 154, 157], //sidebar icon tints
+        "layer0.tint": [200, 200, 200], //sidebar icon tints
         "layer0.opacity": 1.0,
         "content_margin": [8, 8]
     },
@@ -1032,21 +1033,21 @@
         "content_margin": [10, 8],
         "min_size": [64, 0],
         "layer0.texture": "",
-        "layer0.tint": [44, 44, 44], //find buttons
+        "layer0.tint": [30, 64, 88], //find buttons
         "layer0.opacity": 1.0,
-        "layer0.inner_margin": [8, 8],
+        "layer0.inner_margin": [8, 8]
     },
     //Hover button state
     {
         "class": "button_control",
         "attributes": ["hover"],
-        "layer0.tint": [51, 51, 51] //find buttons hover state
+        "layer0.tint": [32, 67, 92] //find buttons hover state
     },
     //Pressed button state
     {
         "class": "button_control",
         "attributes": ["pressed"],
-        "layer0.tint": [51, 51, 51], //find buttons pressed state
+        "layer0.tint": [32, 67, 92], //find buttons pressed state
     },
 
 
@@ -1057,7 +1058,7 @@
     {
         "class": "text_line_control",
         "layer0.texture": "",
-        "layer0.tint": [44, 44, 44], //text input field border
+        "layer0.tint": [30, 64, 88], //text input field border
         "layer0.opacity": 1.0,
         "content_margin": [8, 2]
     },
@@ -1090,7 +1091,7 @@
     {
         "class": "panel_control",
         "layer0.texture": "",
-        "layer0.tint": [44, 44, 44], //bottom panel background
+        "layer0.tint": [30, 64, 88], //bottom panel background
         "layer0.inner_margin": [0, 0],
         "layer0.opacity": 1.0,
         "content_margin": 0
@@ -1100,7 +1101,7 @@
         "class": "overlay_control",
         "layer0.opacity": 1.0,
         "layer1.texture": "",
-        "layer1.tint": [44, 44, 44], //quick panel background
+        "layer1.tint": [30, 64, 88], //quick panel background
         "layer1.inner_margin": [0, 0, 0, 0],
         "layer1.opacity": 1.0,
         "content_margin": [0,8]
@@ -1112,14 +1113,14 @@
     {
         "class": "quick_panel",
         "row_padding": 8,
-        "layer0.tint": [44, 44, 44], //quick panel section
+        "layer0.tint": [30, 64, 88], //quick panel section
         "layer0.opacity": 1.0,
         "dark_content": true
     },
     {
         "class": "quick_panel_row",
         "layer0.texture": "",
-        "layer0.tint": [44, 44, 44], //quick panel section
+        "layer0.tint": [30, 64, 88], //quick panel section
         "layer0.inner_margin": 8,
         "layer0.opacity": 1.0
     },
@@ -1127,19 +1128,19 @@
         "class": "quick_panel_row",
         "attributes": ["hover"],
         "layer0.texture": "",
-        "layer0.tint": [51, 51, 51] //quick panel row hover state
+        "layer0.tint": [37, 78, 107] //quick panel row hover state
     },
     {
         "class": "quick_panel_row",
         "attributes": ["selected"],
         "layer0.texture": "",
-        "layer0.tint": [64, 64, 64] //quick panel row selected state
+        "layer0.tint": [42, 89, 122] //quick panel row selected state
     },
     {
         "class": "quick_panel_label",
-        "fg": [159, 154, 157], //quick panel foreground
+        "fg": [131, 168, 190], //quick panel foreground
         "match_fg": [255, 255, 255], //quick panel match label
-        "selected_fg": [159, 154, 157], //quick panel foreground
+        "selected_fg": [131, 168, 190], //quick panel foreground
         "selected_match_fg": [255, 255, 255] //quick panel selected match foreground
     },
             //Autocomplete - Quick Panel - options
@@ -1175,15 +1176,15 @@
             },
     {
         "class": "quick_panel_path_label",
-        "fg": [159, 154, 157], //quick panel foreground
-        "match_fg": [180, 180, 180], //quick panel path label
-        "selected_fg": [159, 154, 157], //quick panel foreground
-        "selected_match_fg": [180, 180, 180] //quick panel path label
+        "fg": [131, 168, 190], //quick panel foreground
+        "match_fg": [169, 195, 210], //quick panel path label
+        "selected_fg": [131, 168, 190], //quick panel foreground
+        "selected_match_fg": [169, 195, 210] //quick panel path label
     },
     {
         "class": "quick_panel_score_label",
-        "fg": [159, 154, 157], //quick panel foreground
-        "selected_fg": [159, 154, 157] //quick panel foreground
+        "fg": [131, 168, 190], //quick panel foreground
+        "selected_fg": [131, 168, 190] //quick panel foreground
     },
 
 
@@ -1193,20 +1194,20 @@
     {
         "class": "mini_quick_panel_row",
         "layer0.texture": "",
-        "layer0.tint": [44, 44, 44], //mini quick panel section
+        "layer0.tint": [30, 64, 88], //mini quick panel section
         "layer0.opacity": 1.0
     },
     {
         "class": "mini_quick_panel_row",
         "attributes": ["hover"],
         "layer0.texture": "",
-        "layer0.tint": [51, 51, 51] //mini quick panel row hover state
+        "layer0.tint": [37, 78, 107] //mini quick panel row hover state
     },
     {
         "class": "mini_quick_panel_row",
         "attributes": ["selected"],
         "layer0.texture": "",
-        "layer0.tint": [64, 64, 64] //mini quick panel row selected state
+        "layer0.tint": [42, 89, 122] //mini quick panel row selected state
     },
 
 
@@ -1216,7 +1217,7 @@
     {
         "class": "popup_control",
         "content_margin": [0, 0],
-        "layer0.tint": [44, 44, 44], //code completion popup background
+        "layer0.tint": [30, 64, 88], //code completion popup background
         "layer0.opacity": 1.0
     },
     {
@@ -1225,9 +1226,9 @@
     },
     {
         "class": "auto_complete_label",
-        "fg": [159, 154, 157], //autocomplete foreground
+        "fg": [131, 168, 190], //autocomplete foreground
         "match_fg": [255, 255, 255], //autocomplete match label
-        "selected_fg": [159, 154, 157], //autocomplete foreground
+        "selected_fg": [131, 168, 190], //autocomplete foreground
         "selected_match_fg": [255, 255, 255] //autocomplete match label
     },
             //Autocomplete - Code Completion - options
@@ -1264,7 +1265,7 @@
     {
         "class": "table_row",
         "layer0.texture": "",
-        "layer0.tint": [47, 47, 47], //code completion table row
+        "layer0.tint": [32, 67, 92], //code completion table row
         "layer0.opacity": 1.0,
         "layer0.inner_margin": [3, 1]
     },
@@ -1272,13 +1273,13 @@
         "class": "table_row",
         "attributes": ["hover"],
         "layer0.opacity": 1.0,
-        "layer0.tint": [51, 51, 51], //code completion table row hover state
+        "layer0.tint": [37, 78, 107], //code completion table row hover state
     },
     {
         "class": "table_row",
         "attributes": ["selected"],
         "layer0.opacity": 1.0,
-        "layer0.tint": [64, 64, 64], //code completion table row selected state
+        "layer0.tint": [42, 89, 122], //code completion table row selected state
     },
 
 
@@ -1346,55 +1347,55 @@
     {
         "class": "icon_regex",
         "layer0.texture": "Agila Theme/assets/icon-regex.png",
-        "layer0.tint": [90, 90, 90], //bottom icon default state
+        "layer0.tint": [143, 177, 197], //bottom icon default state
         "layer0.opacity": 1.0,
         "content_margin": [8, 8]
     },
     {
         "class": "icon_regex",
         "parents": [{"class": "icon_button_control", "attributes": ["hover"]}],
-        "layer0.tint": [146, 146, 146] //bottom icon hover state
+        "layer0.tint": [193, 212, 223] //bottom icon hover state
     },
     {
         "class": "icon_regex",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.tint": [175, 175, 175] //bottom icon selected state
+        "layer0.tint": [219, 230, 236] //bottom icon selected state
     },
     //Case sensitive search button
     {
         "class": "icon_case",
         "layer0.texture": "Agila Theme/assets/icon-case.png",
-        "layer0.tint": [116, 116, 116], //bottom icon default state
+        "layer0.tint": [143, 177, 197], //bottom icon default state
         "layer0.opacity": 1.0,
         "content_margin": [8, 8]
     },
     {
         "class": "icon_case",
         "parents": [{"class": "icon_button_control", "attributes": ["hover"]}],
-        "layer0.tint": [146, 146, 146] //bottom icon hover state
+        "layer0.tint": [193, 212, 223] //bottom icon hover state
     },
     {
         "class": "icon_case",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.tint": [175, 175, 175] //bottom icon selected state
+        "layer0.tint": [219, 230, 236] //bottom icon selected state
     },
     //Match whole word search button
     {
         "class": "icon_whole_word",
         "layer0.texture": "Agila Theme/assets/icon-word.png",
-        "layer0.tint": [116, 116, 116], //bottom icon default state
+        "layer0.tint": [143, 177, 197], //bottom icon default state
         "layer0.opacity": 1.0,
         "content_margin": [8, 8]
     },
     {
         "class": "icon_whole_word",
         "parents": [{"class": "icon_button_control", "attributes": ["hover"]}],
-        "layer0.tint": [146, 146, 146] //bottom icon hover state
+        "layer0.tint": [193, 212, 223] //bottom icon hover state
     },
     {
         "class": "icon_whole_word",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.tint": [175, 175, 175] //bottom icon selected state
+        "layer0.tint": [219, 230, 236] //bottom icon selected state
     },
 
 
@@ -1405,37 +1406,37 @@
     {
         "class": "icon_context",
         "layer0.texture": "Agila Theme/assets/icon-context.png",
-        "layer0.tint": [116, 116, 116], //bottom icon default state
+        "layer0.tint": [143, 177, 197], //bottom icon default state
         "layer0.opacity": 1.0,
         "content_margin": [8, 8]
     },
     {
         "class": "icon_context",
         "parents": [{"class": "icon_button_control", "attributes": ["hover"]}],
-        "layer0.tint": [146, 146, 146] //bottom icon hover state
+        "layer0.tint": [193, 212, 223] //bottom icon hover state
     },
     {
         "class": "icon_context",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.tint": [175, 175, 175] //bottom icon selected state
+        "layer0.tint": [219, 230, 236] //bottom icon selected state
     },
     //Use search buffer
     {
         "class": "icon_use_buffer",
         "layer0.texture": "Agila Theme/assets/icon-buffer.png",
-        "layer0.tint": [116, 116, 116], //bottom icon default state
+        "layer0.tint": [143, 177, 197], //bottom icon default state
         "layer0.opacity": 1.0,
         "content_margin": [8, 8]
     },
     {
         "class": "icon_use_buffer",
         "parents": [{"class": "icon_button_control", "attributes": ["hover"]}],
-        "layer0.tint": [146, 146, 146] //bottom icon hover state
+        "layer0.tint": [193, 212, 223] //bottom icon hover state
     },
     {
         "class": "icon_use_buffer",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.tint": [175, 175, 175] //bottom icon selected state
+        "layer0.tint": [219, 230, 236] //bottom icon selected state
     },
 
 
@@ -1446,55 +1447,55 @@
     {
         "class": "icon_reverse",
         "layer0.texture": "Agila Theme/assets/icon-reverse.png",
-        "layer0.tint": [116, 116, 116], //bottom icon default state
+        "layer0.tint": [143, 177, 197], //bottom icon default state
         "layer0.opacity": 1.0,
         "content_margin": 8
     },
     {
         "class": "icon_reverse",
         "parents": [{"class": "icon_button_control", "attributes": ["hover"]}],
-        "layer0.tint": [146, 146, 146] //bottom icon hover state
+        "layer0.tint": [193, 212, 223] //bottom icon hover state
     },
     {
         "class": "icon_reverse",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.tint": [175, 175, 175] //bottom icon selected state
+        "layer0.tint": [219, 230, 236] //bottom icon selected state
     },
     // Search wrap button
     {
         "class": "icon_wrap",
         "layer0.texture": "Agila Theme/assets/icon-wrap.png",
-        "layer0.tint": [116, 116, 116], //bottom icon default state
+        "layer0.tint": [143, 177, 197], //bottom icon default state
         "layer0.opacity": 1.0,
         "content_margin": [8, 8]
     },
     {
         "class": "icon_wrap",
         "parents": [{"class": "icon_button_control", "attributes": ["hover"]}],
-        "layer0.tint": [146, 146, 146] //bottom icon hover state
+        "layer0.tint": [193, 212, 223] //bottom icon hover state
     },
     {
         "class": "icon_wrap",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.tint": [175, 175, 175] //bottom icon selected state
+        "layer0.tint": [219, 230, 236] //bottom icon selected state
     },
     // Search in selection button
     {
         "class": "icon_in_selection",
         "layer0.texture": "Agila Theme/assets/icon-selection.png",
-        "layer0.tint": [116, 116, 116], //bottom icon default state
+        "layer0.tint": [143, 177, 197], //bottom icon default state
         "layer0.opacity": 1.0,
         "content_margin": [8, 8]
     },
     {
         "class": "icon_in_selection",
         "parents": [{"class": "icon_button_control", "attributes": ["hover"]}],
-        "layer0.tint": [146, 146, 146] //bottom icon hover state
+        "layer0.tint": [193, 212, 223] //bottom icon hover state
     },
     {
         "class": "icon_in_selection",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.tint": [175, 175, 175] //bottom icon selected state
+        "layer0.tint": [219, 230, 236] //bottom icon selected state
     },
 
 
@@ -1505,19 +1506,19 @@
     {
         "class": "icon_preserve_case",
         "layer0.texture": "Agila Theme/assets/icon-preserve.png",
-        "layer0.tint": [116, 116, 116], //bottom icon default state
+        "layer0.tint": [143, 177, 197], //bottom icon default state
         "layer0.opacity": 1.0,
         "content_margin": [8, 8]
     },
     {
         "class": "icon_preserve_case",
         "parents": [{"class": "icon_button_control", "attributes": ["hover"]}],
-        "layer0.tint": [146, 146, 146] //bottom icon hover state
+        "layer0.tint": [193, 212, 223] //bottom icon hover state
     },
     {
         "class": "icon_preserve_case",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.tint": [175, 175, 175] //bottom icon selected state
+        "layer0.tint": [219, 230, 236] //bottom icon selected state
     },
 
 
@@ -1528,19 +1529,19 @@
     {
         "class": "icon_highlight",
         "layer0.texture": "Agila Theme/assets/icon-highlight.png",
-        "layer0.tint": [116, 116, 116], //bottom icon default state
+        "layer0.tint": [143, 177, 197], //bottom icon default state
         "layer0.opacity": 1.0,
         "content_margin": [8, 8]
     },
     {
         "class": "icon_highlight",
         "parents": [{"class": "icon_button_control", "attributes": ["hover"]}],
-        "layer0.tint": [146, 146, 146] //bottom icon hover state
+        "layer0.tint": [193, 212, 223] //bottom icon hover state
     },
     {
         "class": "icon_highlight",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.tint": [175, 175, 175] //bottom icon selected state
+        "layer0.tint": [219, 230, 236] //bottom icon selected state
     },
 
 
@@ -1551,7 +1552,7 @@
     {
         "class": "status_bar",
         "layer0.texture": "",
-        "layer0.tint": [44, 44, 44], //status bar background
+        "layer0.tint": [30, 64, 88], //status bar background
         "layer0.opacity": 1.0,
         "layer0.inner_margin": [2, 2],
         "content_margin": [8, 4]
@@ -1565,60 +1566,60 @@
     {
         "class": "label_control",
         "parents": [{"class": "status_bar"}],
-        "color": [159, 154, 157] //status bar text color
+        "color": [131, 168, 190] //status bar text color
     },
 
 
 //------------------------------------------------------------------------------
 // CAMOUFLAGE
 //------------------------------------------------------------------------------
-    //theme camouflage
+    //theme camouflage - options
         //full
             {
                 "class": "tabset_control",
                 "settings": ["theme_agila_camouflage"],
-                "layer0.tint": [34, 34, 34]
+                "layer0.tint": [25, 53, 73]
             },
             {
                 "class": "scroll_bar_control",
                 "settings": ["theme_agila_camouflage"],
-                "layer0.tint": [34, 34, 34]
+                "layer0.tint": [25, 53, 73]
             },
             {
                 "class": "scroll_corner_control",
                 "settings": ["theme_agila_camouflage"],
-                "layer0.tint": [34, 34, 34]
+                "layer0.tint": [25, 53, 73]
             },
             {
                 "class": "puck_control",
                 "settings": ["theme_agila_camouflage"],
-                "layer0.tint": [34, 34, 34]
+                "layer0.tint": [25, 53, 73]
             },
             {
                 "class": "sidebar_container",
                 "settings": ["theme_agila_camouflage"],
-                "layer0.tint": [34, 34, 34]
+                "layer0.tint": [25, 53, 73]
             },
             {
                 "class": "sidebar_tree",
                 "settings": ["theme_agila_camouflage"],
-                "layer0.tint": [34, 34, 34]
+                "layer0.tint": [25, 53, 73]
             },
 
         //semi
             {
                 "class": "tabset_control",
                 "settings": ["theme_agila_camouflage_semi"],
-                "layer0.tint": [34, 34, 34]
+                "layer0.tint": [25, 53, 73]
             },
             {
                 "class": "sidebar_container",
                 "settings": ["theme_agila_camouflage_semi"],
-                "layer0.tint": [34, 34, 34]
+                "layer0.tint": [25, 53, 73]
             },
             {
                 "class": "sidebar_tree",
                 "settings": ["theme_agila_camouflage_semi"],
-                "layer0.tint": [34, 34, 34]
+                "layer0.tint": [25, 53, 73]
             }
 ]

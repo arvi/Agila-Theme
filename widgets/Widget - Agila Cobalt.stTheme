@@ -14,21 +14,21 @@
             <key>settings</key>
             <dict>
                 <key>background</key>
-                <string>#FAEABE</string>
+                <string>#1e4058</string>
                 <key>caret</key>
-                <string>#999999</string>
+                <string>#CECECE</string>
                 <key>foreground</key>
-                <string>#999999</string>
+                <string>#CECECE</string>
                 <key>invisibles</key>
-                <string>#fcf2d6</string>
+                <string>#316991</string>
                 <key>lineHighlight</key>
-                <string>#fbf0d0</string>
+                <string>#313131</string>
                 <key>selection</key>
-                <string>#fcf2d6</string>
+                <string>#316991</string>
                 <key>selectionBorder</key>
-                <string>#fcf2d6</string>
+                <string>#316991</string>
                 <key>inactiveSelection</key>
-                <string>#fbf0d0</string>
+                <string>#234b67</string>
             </dict>
         </dict>
         <dict>
@@ -41,7 +41,7 @@
                 <key>fontStyle</key>
                 <string>italic</string>
                 <key>foreground</key>
-                <string>#fcf2d6</string>
+                <string>#316991</string>
             </dict>
         </dict>
         <dict>
@@ -52,7 +52,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#BC810C</string>
+                <string>#CCC47A</string>
             </dict>
         </dict>
         <dict>
@@ -61,7 +61,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#709C00</string>
+                <string>#9CCC3D</string>
             </dict>
         </dict>
         <dict>
@@ -70,7 +70,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#999999</string>
+                <string>#CECECE</string>
             </dict>
         </dict>
         <dict>
@@ -79,7 +79,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#9A9A9A</string>
+                <string>#B4B4B4</string>
             </dict>
         </dict>
     </array>

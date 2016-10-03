@@ -7,7 +7,7 @@
 //                     find buttons | text input field border | bottom panel background |
 //                     quick panel background | quick panel section | mini quick panel section |
 //                     code completion popup background | code completion table row |
-//                     status bar background | scroll drag/pluck
+//                     status bar background
 //
 // [252, 240, 209] --> #fcf0d1
 //                     tab element background | grid layout |
@@ -62,8 +62,11 @@
 //                     text dropdown tint |
 //                     icon button control | sidebar folder button tint | sidebar icon tints
 //
-// [175, 175, 175] --> ##afafaf
+// [175, 175, 175] --> #afafaf
 //                     fold button control default state
+//
+// [248, 226, 166] --> #f8e2a6
+//                     scroll drag/pluck
 //
 // [134, 145, 165] --> #8691a5 - gray theme
 //                     tooltip text | sidebar entry hover state
@@ -417,7 +420,7 @@
     //Standard vertical scroll puck
     {
         "class": "puck_control",
-        "layer0.tint":[250, 234, 190], //scroll drag/pluck
+        "layer0.tint":[248, 226, 166], //scroll drag/pluck
         "layer0.opacity": 1.0,
         "layer0.inner_margin": 0,
         "content_margin": [4,0],
@@ -481,7 +484,7 @@
     {
         "class": "puck_control",
         "attributes": ["horizontal"],
-        "layer0.tint":[250, 234, 190], //scroll drag/pluck
+        "layer0.tint":[248, 226, 166], //scroll drag/pluck
         "layer0.inner_margin": 0,
         "content_margin": [10,4],
         "blur": false
@@ -757,6 +760,16 @@
                 "class": "sidebar_tree",
                 "settings": ["theme_agila_compact_sidebar"],
                 "indent": 20
+            },
+            {
+                "class": "sidebar_tree",
+                "settings": ["theme_agila_sidebar_mini"],
+                "row_padding": [20, 5]
+            },
+            {
+                "class": "sidebar_tree",
+                "settings": ["theme_agila_sidebar_xsmall"],
+                "row_padding": [20, 7]
             },
             {
                 "class": "sidebar_tree",

@@ -20,15 +20,15 @@
                 <key>foreground</key>
                 <string>#DADCD5</string>
                 <key>invisibles</key>
-                <string>#aa847f</string>
+                <string>#5e433f</string>
                 <key>lineHighlight</key>
-                <string>#3c2b28</string>
+                <string>#3c2a28</string>
                 <key>selection</key>
-                <string>#aa847f</string>
+                <string>#5e433f</string>
                 <key>selectionBorder</key>
-                <string>#aa847f</string>
+                <string>#5e433f</string>
                 <key>inactiveSelection</key>
-                <string>#3c2b28</string>
+                <string>#3c2a28</string>
             </dict>
         </dict>
         <dict>
@@ -41,7 +41,7 @@
                 <key>fontStyle</key>
                 <string>italic</string>
                 <key>foreground</key>
-                <string>#aa847f</string>
+                <string>#5e433f</string>
             </dict>
         </dict>
         <dict>
