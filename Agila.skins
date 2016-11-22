@@ -1,0 +1,57 @@
+{
+    "Agila - Default": {
+        "Preferences": {
+            "theme": "Agila.sublime-theme",
+            "color_scheme": "Packages/Agila Theme/Agila Oceanic Next.tmTheme"
+        }
+    },
+
+    "Agila - Origin": {
+        "Preferences": {
+            "theme": "Agila Origin.sublime-theme",
+            "color_scheme": "Packages/Agila Theme/Agila Origin Oceanic Next.tmTheme",
+        }
+    },
+
+    "Agila - Dracula": {
+        "Preferences": {
+            "theme": "Agila Dracula.sublime-theme",
+            "color_scheme": "Packages/Agila Theme/Agila Dracula.tmTheme",
+        }
+    },
+
+    "Agila - Monokai": {
+        "Preferences": {
+            "theme": "Agila Monokai.sublime-theme",
+            "color_scheme": "Packages/Agila Theme/Agila Monokai Extended.tmTheme",
+        }
+    },
+
+    "Agila - Cobalt": {
+        "Preferences": {
+            "theme": "Agila Cobalt.sublime-theme",
+            "color_scheme": "Packages/Agila Theme/Agila Cobalt.tmTheme",
+        }
+    },
+
+    "Agila - Classic": {
+        "Preferences": {
+            "theme": "Agila Classic.sublime-theme",
+            "color_scheme": "Packages/Agila Theme/Agila Classic Oceanic Next.tmTheme",
+        }
+    },
+
+    "Agila - Light": {
+        "Preferences": {
+            "theme": "Agila Light.sublime-theme",
+            "color_scheme": "Packages/Agila Theme/Agila Light Solarized.tmTheme",
+        }
+    },
+
+    "Agila - Neon": {
+        "Preferences": {
+            "theme": "Agila Neon.sublime-theme",
+            "color_scheme": "Packages/Agila Theme/Agila Neon Monocyanide.tmTheme",
+        }
+    }
+}

@@ -53,7 +53,10 @@ via installing the theme manually.
 
 ---
 
-### How to Activate Theme
+### Activate theme via Skins
+[Skins](https://packagecontrol.io/packages/Skins) provides an easy way to manage your themes for Sublime Text 3. Run its `Select Skin` command from the command palette and choose any of the various `Agila` theme variants from the list.
+
+### Activate theme normal way
 via User Preferences file (*`Sublime Text -> Preferences -> Settings - User`*). After setting up,
 don't forget to **restart Sublime Text Editor** for changes to take effect.
 
