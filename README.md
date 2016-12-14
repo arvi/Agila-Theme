@@ -65,6 +65,7 @@ via User Preferences file (*`Sublime Text > Preferences > Settings - User`*). Af
 don't forget to **restart Sublime Text Editor** for changes to take effect. 
 
 **To also enable Markdown syntax highlighting based on selected theme:**
+
 1. Open a Markdown file
 2. Go to Preferences > Settings - Syntax Specific and change `color_scheme` value based on the last `color_scheme` setting specific to theme below.
 
