@@ -3,55 +3,79 @@
         "Preferences": {
             "theme": "Agila.sublime-theme",
             "color_scheme": "Packages/Agila Theme/Agila Oceanic Next.tmTheme"
+        },
+        "Markdown Extended": {
+            "color_scheme": "Packages/Agila Theme/Markdown/Oceanic Next Markdown.tmTheme"
         }
     },
 
     "Agila - Origin": {
         "Preferences": {
             "theme": "Agila Origin.sublime-theme",
-            "color_scheme": "Packages/Agila Theme/Agila Origin Oceanic Next.tmTheme",
+            "color_scheme": "Packages/Agila Theme/Agila Origin Oceanic Next.tmTheme"
+        },
+        "Markdown Extended": {
+            "color_scheme": "Packages/Agila Theme/Markdown/Oceanic Next Origin Markdown.tmTheme"
         }
     },
 
     "Agila - Dracula": {
         "Preferences": {
             "theme": "Agila Dracula.sublime-theme",
-            "color_scheme": "Packages/Agila Theme/Agila Dracula.tmTheme",
+            "color_scheme": "Packages/Agila Theme/Agila Dracula.tmTheme"
+        },
+        "Markdown Extended": {
+            "color_scheme": "Packages/Agila Theme/Markdown/Dracula Markdown.tmTheme"
         }
     },
 
     "Agila - Monokai": {
         "Preferences": {
             "theme": "Agila Monokai.sublime-theme",
-            "color_scheme": "Packages/Agila Theme/Agila Monokai Extended.tmTheme",
+            "color_scheme": "Packages/Agila Theme/Agila Monokai Extended.tmTheme"
+        },
+        "Markdown Extended": {
+            "color_scheme": "Packages/Agila Theme/Markdown/Monokai Markdown.tmTheme"
         }
     },
 
     "Agila - Cobalt": {
         "Preferences": {
             "theme": "Agila Cobalt.sublime-theme",
-            "color_scheme": "Packages/Agila Theme/Agila Cobalt.tmTheme",
+            "color_scheme": "Packages/Agila Theme/Agila Cobalt.tmTheme"
+        },
+        "Markdown Extended": {
+            "color_scheme": "Packages/Agila Theme/Markdown/Cobalt Markdown.tmTheme"
         }
     },
 
     "Agila - Classic": {
         "Preferences": {
             "theme": "Agila Classic.sublime-theme",
-            "color_scheme": "Packages/Agila Theme/Agila Classic Oceanic Next.tmTheme",
+            "color_scheme": "Packages/Agila Theme/Agila Classic Oceanic Next.tmTheme"
+        },
+        "Markdown Extended": {
+            "color_scheme": "Packages/Agila Theme/Markdown/Classic Oceanic Next Markdown.tmTheme"
         }
     },
 
     "Agila - Light": {
         "Preferences": {
             "theme": "Agila Light.sublime-theme",
-            "color_scheme": "Packages/Agila Theme/Agila Light Solarized.tmTheme",
+            "color_scheme": "Packages/Agila Theme/Agila Light Solarized.tmTheme"
+        },
+        "Markdown Extended": {
+            "color_scheme": "Packages/Agila Theme/Markdown/Light Solarized Markdown.tmTheme"
         }
     },
 
     "Agila - Neon": {
         "Preferences": {
             "theme": "Agila Neon.sublime-theme",
-            "color_scheme": "Packages/Agila Theme/Agila Neon Monocyanide.tmTheme",
+            "color_scheme": "Packages/Agila Theme/Agila Neon Monocyanide.tmTheme"
+        },
+        "Markdown Extended": {
+            "color_scheme": "Packages/Agila Theme/Markdown/Neon Monocyanide Markdown.tmTheme"
         }
     }
 }

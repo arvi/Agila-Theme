@@ -40,7 +40,7 @@ You can customize the UI to your liking _(e.g camouflage workspace with the colo
 ##### *Chill* way
 via [Package Control](https://packagecontrol.io/), where Agila is listed as *`Agila Theme`*.
 
-1. Open Command Palette using menu item *`Tools -> Command Palette...`*
+1. Open Command Palette using menu item *`Tools > Command Palette...`* or `CMD/CTRL + SHIFT + P`
 2. Choose `Package Control: Install Package`
 3. Find *`Agila Theme`* and hit *`Enter`*
 
@@ -52,13 +52,21 @@ via installing the theme manually.
 3. Move *`Agila Theme`* folder inside the Packages directory (*`Preferences > Browse packages...`*)
 
 ---
+### Themes
+Agila themes include Markdown syntax highlighting provided you have [Markdown Extended](https://packagecontrol.io/packages/Markdown%20Extended) package installed.
 
-### Activate theme via Skins
-[Skins](https://packagecontrol.io/packages/Skins) provides an easy way to manage your themes for Sublime Text 3. Run its `Select Skin` command from the command palette and choose any of the various `Agila` theme variants from the list.
+### Activation
+##### *Chill* way via Skins
+[Skins](https://packagecontrol.io/packages/Skins) provides an easy way to manage your themes for Sublime Text 3. Run its `Select Skin` command from the Command Palette *`Tools > Command Palette...`* or `CMD/CTRL + SHIFT + P` and choose any of the various `Agila` theme variants from the list. 
+**No extra steps for activating Markdown syntax highlighting based on selected theme.**
 
-### Activate theme normal way
-via User Preferences file (*`Sublime Text -> Preferences -> Settings - User`*). After setting up,
-don't forget to **restart Sublime Text Editor** for changes to take effect.
+##### *Woooo* way
+via User Preferences file (*`Sublime Text > Preferences > Settings - User`*). After setting up,
+don't forget to **restart Sublime Text Editor** for changes to take effect. 
+
+**To also enable Markdown syntax highlighting based on selected theme:**
+1. Open a Markdown file
+2. Go to Preferences > Settings - Syntax Specific and change `color_scheme` value based on the last `color_scheme` setting specific to theme below.
 
 ##### Default theme
 #
@@ -67,11 +75,18 @@ don't forget to **restart Sublime Text Editor** for changes to take effect.
 "color_scheme": "Packages/Agila Theme/Agila Oceanic Next.tmTheme",
 ```
 
+```json
+"color_scheme": "Packages/Agila Theme/Markdown/Oceanic Next Markdown.tmTheme"
+```
+
 ##### Origin theme
 #
 ```json
 "theme": "Agila Origin.sublime-theme",
 "color_scheme": "Packages/Agila Theme/Agila Origin Oceanic Next.tmTheme",
+```
+```json
+"color_scheme": "Packages/Agila Theme/Markdown/Oceanic Next Origin Markdown.tmTheme"
 ```
 
 ##### Dracula theme
@@ -80,12 +95,18 @@ don't forget to **restart Sublime Text Editor** for changes to take effect.
 "theme": "Agila Dracula.sublime-theme",
 "color_scheme": "Packages/Agila Theme/Agila Dracula.tmTheme",
 ```
+```json
+"color_scheme": "Packages/Agila Theme/Markdown/Dracula Markdown.tmTheme"
+```
 
 ##### Monokai theme
 #
 ```json
 "theme": "Agila Monokai.sublime-theme",
 "color_scheme": "Packages/Agila Theme/Agila Monokai Extended.tmTheme",
+```
+```json
+"color_scheme": "Packages/Agila Theme/Markdown/Monokai Markdown.tmTheme"
 ```
 
 ##### Cobalt theme
@@ -94,12 +115,18 @@ don't forget to **restart Sublime Text Editor** for changes to take effect.
 "theme": "Agila Cobalt.sublime-theme",
 "color_scheme": "Packages/Agila Theme/Agila Cobalt.tmTheme",
 ```
+```json
+"color_scheme": "Packages/Agila Theme/Markdown/Cobalt Markdown.tmTheme"
+```
 
 ##### Classic theme
 #
 ```json
 "theme": "Agila Classic.sublime-theme",
 "color_scheme": "Packages/Agila Theme/Agila Classic Oceanic Next.tmTheme",
+```
+```json
+"color_scheme": "Packages/Agila Theme/Markdown/Classic Oceanic Next Markdown.tmTheme"
 ```
 
 ##### Light theme
@@ -108,7 +135,9 @@ don't forget to **restart Sublime Text Editor** for changes to take effect.
 "theme": "Agila Light.sublime-theme",
 "color_scheme": "Packages/Agila Theme/Agila Light Solarized.tmTheme",
 ```
-#
+```json
+"color_scheme": "Packages/Agila Theme/Markdown/Light Solarized Markdown.tmTheme"
+```
 
 ##### Neon theme
 #
@@ -116,7 +145,11 @@ don't forget to **restart Sublime Text Editor** for changes to take effect.
 "theme": "Agila Neon.sublime-theme",
 "color_scheme": "Packages/Agila Theme/Agila Neon Monocyanide.tmTheme",
 ```
+```json
+"color_scheme": "Packages/Agila Theme/Markdown/Neon Monocyanide Markdown.tmTheme"
+```
 #
+
 
 Note: You can use active guide with these schemes by adding:
 ```json
@@ -285,7 +318,7 @@ overrides default theme sidebar and tab background only based on theme scheme ba
 - [Cobalt2 Scheme](https://github.com/wesbos/cobalt2)
 - [Colorhexa](http://www.colorhexa.com/) - color combinations
 - `meteor create --sample todos` - screenshot code snippet :p
-- Contributor(s): [davidmatas](https://github.com/davidmatas)
+- Contributor(s): [davidmatas](https://github.com/davidmatas), [Cldfire](https://github.com/Cldfire)
 
 ---
 ### Fun Experiments :p

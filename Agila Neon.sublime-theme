@@ -18,7 +18,7 @@
 // [44, 44, 44]    --> #2c2c2c
 //                     tab element hover state
 //
-// [11, 11, 11]    --> #0b0b0b
+// [8, 13, 18]    --> #080D12
 //                     tab element active state | theme camouflage
 //
 // [63, 63, 63]    --> #3f3f3f
@@ -152,7 +152,7 @@
         "class": "tab_control",
         "attributes": ["selected"],
         "layer0.texture": "",
-        "layer0.tint": [11, 11, 11], //tab element active state
+        "layer0.tint": [8, 13, 18], //tab element active state
     },
     //Tab dirty state (close button hidden)
     {
@@ -1579,48 +1579,48 @@
             {
                 "class": "tabset_control",
                 "settings": ["theme_agila_camouflage"],
-                "layer0.tint": [11, 11, 11]
+                "layer0.tint": [8, 13, 18]
             },
             {
                 "class": "scroll_bar_control",
                 "settings": ["theme_agila_camouflage"],
-                "layer0.tint": [11, 11, 11]
+                "layer0.tint": [8, 13, 18]
             },
             {
                 "class": "scroll_corner_control",
                 "settings": ["theme_agila_camouflage"],
-                "layer0.tint": [11, 11, 11]
+                "layer0.tint": [8, 13, 18]
             },
             {
                 "class": "puck_control",
                 "settings": ["theme_agila_camouflage"],
-                "layer0.tint": [11, 11, 11]
+                "layer0.tint": [8, 13, 18]
             },
             {
                 "class": "sidebar_container",
                 "settings": ["theme_agila_camouflage"],
-                "layer0.tint": [11, 11, 11]
+                "layer0.tint": [8, 13, 18]
             },
             {
                 "class": "sidebar_tree",
                 "settings": ["theme_agila_camouflage"],
-                "layer0.tint": [11, 11, 11]
+                "layer0.tint": [8, 13, 18]
             },
 
         //semi
             {
                 "class": "tabset_control",
                 "settings": ["theme_agila_camouflage_semi"],
-                "layer0.tint": [11, 11, 11]
+                "layer0.tint": [8, 13, 18]
             },
             {
                 "class": "sidebar_container",
                 "settings": ["theme_agila_camouflage_semi"],
-                "layer0.tint": [11, 11, 11]
+                "layer0.tint": [8, 13, 18]
             },
             {
                 "class": "sidebar_tree",
                 "settings": ["theme_agila_camouflage_semi"],
-                "layer0.tint": [11, 11, 11]
+                "layer0.tint": [8, 13, 18]
             }
 ]
