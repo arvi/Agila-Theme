@@ -226,6 +226,12 @@ overrides default theme sidebar and tab background only based on theme scheme ba
 "theme_agila_sidebar_light_icons": true,
 ```
 
+##### SIDEBAR FOLDER PLUS/MINUS ICONS
+#
+```json
+"theme_agila_sidebar_plus_minus": true,
+```
+
 ##### COMPACT TAB - REDUCED TAB HEIGHT
 #
 ```json
