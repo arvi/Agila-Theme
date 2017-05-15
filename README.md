@@ -60,6 +60,7 @@ Agila themes include Markdown syntax highlighting provided you have [Markdown Ex
 [Skins](https://packagecontrol.io/packages/Skins) provides an easy way to manage your themes for Sublime Text 3. Run its `Select Skin` command from the Command Palette *`Tools > Command Palette...`* or `CMD/CTRL + SHIFT + P` and choose any of the various `Agila` theme variants from the list. 
 **No extra steps for activating Markdown syntax highlighting based on selected theme.**
 
+
 ##### *Woooo* way
 via User Preferences file (*`Sublime Text > Preferences > Settings - User`*). After setting up,
 don't forget to **restart Sublime Text Editor** for changes to take effect. 
@@ -176,6 +177,11 @@ overrides default theme sidebar and tab background only based on theme scheme ba
 "theme_agila_camouflage_semi": true,
 ```
 
+overrides all the theme_agila_* size settings; convenient for small laptops
+```json
+"theme_agila_nano_mode": true,
+```
+
 ##### SIDEBAR COMPACT TREE STRUCTURE - NO INDENTATION
 #
 ```json
@@ -228,6 +234,7 @@ overrides default theme sidebar and tab background only based on theme scheme ba
 
 ##### SIDEBAR FOLDER PLUS/MINUS ICONS
 #
+if a plus/minus icon is preferred beside folder icon
 ```json
 "theme_agila_sidebar_plus_minus": true,
 ```
@@ -312,6 +319,9 @@ overrides default theme sidebar and tab background only based on theme scheme ba
 #
 #
 ---
+### Ports
+- [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=whtsky.agila-theme) by whtsky 
+---
 ### Thanks to
 - [Preap Theme](https://packagecontrol.io/packages/Preap) - UI inspiration and .sublime-theme source code :)
 - [Spacegray Theme](http://kkga.github.io/spacegray) - UI inspiration and .sublime-theme source code :)
@@ -325,7 +335,7 @@ overrides default theme sidebar and tab background only based on theme scheme ba
 - [Cobalt2 Scheme](https://github.com/wesbos/cobalt2)
 - [Colorhexa](http://www.colorhexa.com/) - color combinations
 - `meteor create --sample todos` - screenshot code snippet :p
-- Contributor(s): [davidmatas](https://github.com/davidmatas), [Cldfire](https://github.com/Cldfire)
+- Contributor(s): [davidmatas](https://github.com/davidmatas), [Cldfire](https://github.com/Cldfire), [polyvertex](https://github.com/polyvertex), [mikedcook](https://github.com/mikedcook)
 
 ---
 ### Fun Experiments :p
