@@ -116,6 +116,15 @@
         "settings": ["mouse_wheel_switches_tabs"],
         "mouse_wheel_switch": true
     },
+            // Nano Mode
+            {
+                "class": "tabset_control",
+                "settings": ["theme_agila_nano_mode"],
+                "tab_overlap": 0,
+                "tab_width": 40,
+                "tab_min_width": 40,
+                "tab_height": 18
+            },
 
     //Tab element
     {
@@ -161,6 +170,12 @@
         "attributes": ["dirty"],
         "content_margin": [8, 0]
     },
+            // Nano Mode
+            {
+                "class": "tab_control",
+                "settings": ["theme_agila_nano_mode"],
+                "content_margin": [4, 0]
+            },
 
 
 //------------------------------------------------------------------------------
@@ -178,6 +193,21 @@
         "settings": ["show_tab_close_buttons"],
         "layer0.opacity": 1.0
     },
+            // Nano Mode - hide button when show_tab_close_buttons is false
+            {
+                "class": "tab_close_button",
+                "settings": ["!show_tab_close_buttons", "theme_agila_nano_mode"],
+                "content_margin": 0
+            },
+            // Nano Mode
+            {
+                "class": "tab_close_button",
+                "settings": ["show_tab_close_buttons", "theme_agila_nano_mode"],
+                "content_margin": [8, 8, 7, 7],
+                "layer0.texture": "Agila Theme/assets/nano-mode/tab-close.png",
+                "layer0.opacity": 0.5,
+                "layer0.tint": [255, 255, 255]
+            },
     {
         "class": "tab_close_button",
         "parents": [{"class": "tab_control", "attributes": ["hover"]}],
@@ -195,6 +225,16 @@
         "layer0.tint": [243, 103, 129], //tab close button hover state
         "layer0.opacity": 1.0
     },
+            // Nano Mode
+            {
+                "class": "tab_close_button",
+                "parents": [{"class": "tab_control", "attributes": ["hover"]}],
+                "attributes": ["hover"],
+                "settings": ["theme_agila_nano_mode"],
+                "layer0.texture": "Agila Theme/assets/nano-mode/tab-close.png",
+                "layer0.opacity": 1.0,
+                "layer0.tint": [255, 0, 0]
+            },
     // Tab dirty button
     {
         "class": "tab_close_button",
@@ -240,6 +280,13 @@
                 "layer0.texture": "Agila Theme/assets/tab-dirty-pink.png",
                 "layer0.tint": [243, 103, 129] //pink theme
             },
+            // Nano Mode - always display the dirty button
+            {
+                "class": "tab_close_button",
+                "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
+                "settings": ["!show_tab_close_buttons", "theme_agila_nano_mode"],
+                "content_margin": [8, 8]
+            },
 
     // Tab highlight button
     {
@@ -258,6 +305,16 @@
         "layer0.tint": [243, 103, 129], //tab active state hover on close button
         "layer0.opacity": 1.0
     },
+            // Nano Mode
+            {
+                "class": "tab_close_button",
+                "settings": ["highlight_modified_tabs", "theme_agila_nano_mode"],
+                "parents": [{"class": "tab_control", "attributes": ["dirty", "hover"]}],
+                "attributes": ["hover"],
+                "layer0.texture": "Agila Theme/assets/nano-mode/tab-close.png",
+                "layer0.opacity": 1.0,
+                "layer0.tint": [255, 0, 0]
+            },
 
 
 //------------------------------------------------------------------------------
@@ -270,6 +327,12 @@
         "fg": [159, 154, 157], //tab label inactive state
         "font.size": 11.5
     },
+            // Nano Mode
+            {
+                "class": "tab_label",
+                "settings": ["theme_agila_nano_mode"],
+                "font.size": 11
+            },
     //Tab label highlighted state
     {
         "class": "tab_label",
@@ -330,6 +393,14 @@
         "layer0.tint": [255, 255, 255], //tab dropdown tint
         "layer0.opacity": 1.0
     },
+            // Nano Mode
+            {
+                "class": "show_tabs_dropdown_button",
+                "settings": ["theme_agila_nano_mode"],
+                "content_margin": [9, 7, 8, 6],
+                "layer0.texture": "Agila Theme/assets/nano-mode/tabset-list.png",
+                "layer0.tint": [116, 116, 116]
+            },
     {
         "class": "show_tabs_dropdown_button",
         "attributes": ["hover"],
@@ -337,6 +408,13 @@
         "layer0.tint": [255, 255, 255], //tab dropdown hover state
         "layer0.opacity": 1.0
     },
+            // Nano Mode
+            {
+                "class": "show_tabs_dropdown_button",
+                "attributes": ["hover"],
+                "settings": ["theme_agila_nano_mode"],
+                "layer0.texture": "Agila Theme/assets/nano-mode/tabset-list.png"
+            },
     // Tab scroll left
     {
         "class": "scroll_tabs_left_button",
@@ -346,6 +424,13 @@
         "layer0.inner_margin": 0,
         "layer0.opacity": 0.5
     },
+            // Nano Mode
+            {
+                "class": "scroll_tabs_left_button",
+                "settings": ["theme_agila_nano_mode"],
+                "content_margin": [9,7,8,6],
+                "layer0.texture": "Agila Theme/assets/nano-mode/tabset-left-arrow.png"
+            },
     {
         "class": "scroll_tabs_left_button",
         "attributes": ["hover"],
@@ -361,6 +446,13 @@
         "layer0.inner_margin": 0,
         "layer0.opacity": 0.5
     },
+            // Nano Mode
+            {
+                "class": "scroll_tabs_right_button",
+                "settings": ["theme_agila_nano_mode"],
+                "content_margin": [9,7,8,6],
+                "layer0.texture": "Agila Theme/assets/nano-mode/tabset-right-arrow.png"
+            },
     {
         "class": "scroll_tabs_right_button",
         "attributes": ["hover"],
@@ -714,6 +806,12 @@
         "font.size": 14,
         "color": [134, 145, 165] //button labels
     },
+            // Nano Mode
+            {
+                "class": "label_control",
+                "settings": ["theme_agila_nano_mode"],
+                "font.size": 11
+            },
 
 
 //------------------------------------------------------------------------------
@@ -727,11 +825,28 @@
         "layer0.opacity": 1.0,
         "content_margin": [8, 6]
     },
+            // Nano Mode
+            {
+                "class": "tool_tip_control",
+                "settings": ["theme_agila_nano_mode"],
+                "content_margin": [5, 3],
+                "layer1.tint": [90, 90, 90],
+                "layer1.inner_margin": [1, 1],
+                "layer1.draw_center": false,
+                "layer1.opacity": 1.0
+            },
     // Tooltip content
     {
         "class": "tool_tip_label_control",
         "color": [134, 145, 165] //tooltip text
     },
+        // Nano Mode
+        {
+            "class": "tool_tip_label_control",
+            "settings": ["theme_agila_nano_mode"],
+            "color": [180, 180, 180],
+            "font.size": 11
+        },
 
 
 //------------------------------------------------------------------------------
@@ -746,6 +861,12 @@
         "layer0.inner_margin": 0,
         "content_margin": [0, 15, 0, 0]
     },
+            // Nano Mode
+            {
+                "class": "sidebar_container",
+                "settings": ["theme_agila_nano_mode"],
+                "content_margin": [0, 0, 0, 0]
+            },
     //Sidebar tree
     {
         "class": "sidebar_tree",
@@ -788,6 +909,15 @@
                 "settings": ["theme_agila_sidebar_large"],
                 "row_padding": [20, 11]
             },
+            // Nano Mode
+            {
+                "class": "sidebar_tree",
+                "settings": ["theme_agila_nano_mode"],
+                "row_padding": [0, 1, 0, 0],
+                "indent_top_level": false,
+                "indent": 16,
+                "indent_offset": 2
+            },
     //Sidebar rows
     {
         "class": "tree_row",
@@ -801,6 +931,13 @@
         "attributes": ["selected"],
         "layer0.opacity": 1.0
     },
+            // Nano Mode
+            {
+                "class": "tree_row",
+                "attributes": ["hover"],
+                "settings": ["theme_agila_nano_mode"],
+                "layer0.opacity": 1.0
+            },
     //Sidebar heading
     {
         "class": "sidebar_heading",
@@ -863,6 +1000,15 @@
                 "settings": ["theme_agila_sidebar_font_big"],
                 "font.size": 14
             },
+            // Nano Mode
+            {
+                "class": "sidebar_label",
+                "settings": ["theme_agila_nano_mode"],
+                "shadow_color": [24, 24, 24, 255],
+                "shadow_offset": [0, 1],
+                "font.bold": false,
+                "font.size": 11
+            },
     //Sidebar folder entry
     {
         "class": "sidebar_label",
@@ -874,6 +1020,13 @@
         "parents": [{"class": "tree_row", "attributes": ["hover"]}],
         "color": [134, 145, 165] //sidebar entry hover state
     },
+            // Nano Mode
+            {
+                "class": "sidebar_label",
+                "parents": [{"class": "tree_row", "attributes": ["hover"]}],
+                "settings": ["theme_agila_nano_mode"],
+                "color": [255, 255, 255]
+            },
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["expandable"]}],
@@ -1038,6 +1191,13 @@
         "layer0.opacity": 1.0,
         "layer0.inner_margin": [8, 8]
     },
+            // Nano Mode
+            {
+                "class": "button_control",
+                "settings": ["theme_agila_nano_mode"],
+                "layer0.tint": [34, 34, 34],
+                "content_margin": 6
+            },
     //Hover button state
     {
         "class": "button_control",
@@ -1063,6 +1223,14 @@
         "layer0.opacity": 1.0,
         "content_margin": [8, 2]
     },
+            // Nano Mode
+            {
+                "class": "text_line_control",
+                "settings": ["theme_agila_nano_mode"],
+                "content_margin": 1,
+                "layer0.tint": [34, 34, 34],
+                "layer0.inner_margin": 0
+            },
     //Text input dropdown
     {
         "class": "dropdown_button_control",
@@ -1072,6 +1240,15 @@
         "layer0.opacity": 1.0,
         "layer0.inner_margin": [4, 4]
     },
+            // Nano Mode
+            {
+                "class": "dropdown_button_control",
+                "settings": ["theme_agila_nano_mode"],
+                "content_margin": [9, 7, 8, 6],
+                "layer0.texture": "Agila Theme/assets/nano-mode/tabset-list.png",
+                "layer0.tint": [116, 116, 116],
+                "layer0.inner_margin": 0
+            },
     {
         "class": "dropdown_button_control",
         "attributes": ["hover"],
@@ -1083,6 +1260,16 @@
         "attributes": ["hover"],
         "layer0.tint": [255, 255, 255] //text field dropdown hover state
     },
+            // Nano Mode
+            {
+                "class": "dropdown_button_control",
+                "attributes": ["hover"],
+                "settings": ["theme_agila_nano_mode"],
+                "content_margin": [9, 7, 8, 6],
+                "layer0.texture": "Agila Theme/assets/nano-mode/tabset-list.png",
+                "layer0.tint": [255, 255, 255], //text field dropdown hover state
+                "layer0.inner_margin": 0
+            },
 
 
 //------------------------------------------------------------------------------
@@ -1118,6 +1305,12 @@
         "layer0.opacity": 1.0,
         "dark_content": true
     },
+            // Nano Mode
+            {
+                "class": "quick_panel",
+                "settings": ["theme_agila_nano_mode"],
+                "row_padding": 4
+            },
     {
         "class": "quick_panel_row",
         "layer0.texture": "",
@@ -1293,6 +1486,12 @@
         "layer0.opacity": 0,
         "content_margin": [20,8]
     },
+            // Nano Mode
+            {
+                "class": "icon_button_control",
+                "settings": ["theme_agila_nano_mode"],
+                "content_margin": [4, 4]
+            },
     {
         "class": "icon_button_control",
         "attributes": ["selected"],
@@ -1362,6 +1561,13 @@
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
         "layer0.tint": [246,247,249] //bottom icon selected state
     },
+            // Nano Mode
+            {
+                "class": "icon_regex",
+                "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+                "settings": ["theme_agila_nano_mode"],
+                "layer0.tint": [255, 255, 255]
+            },
     //Case sensitive search button
     {
         "class": "icon_case",
@@ -1380,6 +1586,13 @@
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
         "layer0.tint": [246,247,249] //bottom icon selected state
     },
+            // Nano Mode
+            {
+                "class": "icon_case",
+                "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+                "settings": ["theme_agila_nano_mode"],
+                "layer0.tint": [255, 255, 255]
+            },
     //Match whole word search button
     {
         "class": "icon_whole_word",
@@ -1398,6 +1611,13 @@
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
         "layer0.tint": [246,247,249] //bottom icon selected state
     },
+            // Nano Mode
+            {
+                "class": "icon_whole_word",
+                "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+                "settings": ["theme_agila_nano_mode"],
+                "layer0.tint": [255, 255, 255]
+            },
 
 
 //------------------------------------------------------------------------------
@@ -1421,6 +1641,13 @@
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
         "layer0.tint": [246,247,249] //bottom icon selected state
     },
+            // Nano Mode
+            {
+                "class": "icon_context",
+                "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+                "settings": ["theme_agila_nano_mode"],
+                "layer0.tint": [255, 255, 255]
+            },
     //Use search buffer
     {
         "class": "icon_use_buffer",
@@ -1439,6 +1666,13 @@
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
         "layer0.tint": [246,247,249] //bottom icon selected state
     },
+            // Nano Mode
+            {
+                "class": "icon_use_buffer",
+                "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+                "settings": ["theme_agila_nano_mode"],
+                "layer0.tint": [255, 255, 255]
+            },
 
 
 //------------------------------------------------------------------------------
@@ -1462,6 +1696,13 @@
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
         "layer0.tint": [246,247,249] //bottom icon selected state
     },
+            // Nano Mode
+            {
+                "class": "icon_reverse",
+                "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+                "settings": ["theme_agila_nano_mode"],
+                "layer0.tint": [255, 255, 255]
+            },
     // Search wrap button
     {
         "class": "icon_wrap",
@@ -1480,6 +1721,13 @@
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
         "layer0.tint": [246,247,249] //bottom icon selected state
     },
+            // Nano Mode
+            {
+                "class": "icon_wrap",
+                "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+                "settings": ["theme_agila_nano_mode"],
+                "layer0.tint": [255, 255, 255]
+            },
     // Search in selection button
     {
         "class": "icon_in_selection",
@@ -1498,6 +1746,13 @@
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
         "layer0.tint": [246,247,249] //bottom icon selected state
     },
+            // Nano Mode
+            {
+                "class": "icon_in_selection",
+                "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+                "settings": ["theme_agila_nano_mode"],
+                "layer0.tint": [255, 255, 255]
+            },
 
 
 //------------------------------------------------------------------------------
@@ -1521,6 +1776,13 @@
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
         "layer0.tint": [246,247,249] //bottom icon selected state
     },
+            // Nano Mode
+            {
+                "class": "icon_preserve_case",
+                "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+                "settings": ["theme_agila_nano_mode"],
+                "layer0.tint": [255, 255, 255]
+            },
 
 
 //------------------------------------------------------------------------------
@@ -1544,6 +1806,13 @@
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
         "layer0.tint": [246,247,249] //bottom icon selected state
     },
+            // Nano Mode
+            {
+                "class": "icon_highlight",
+                "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+                "settings": ["theme_agila_nano_mode"],
+                "layer0.tint": [255, 255, 255]
+            },
 
 
 //------------------------------------------------------------------------------
@@ -1558,11 +1827,23 @@
         "layer0.inner_margin": [2, 2],
         "content_margin": [8, 4]
     },
+            // Nano Mode
+            {
+                "class": "status_bar",
+                "settings": ["theme_agila_nano_mode"],
+                "content_margin": [8, 2]
+            },
     // Status bar button
     {
         "class": "status_button",
         "min_size": [100, 0]
     },
+            // Nano Mode
+            {
+                "class": "status_button",
+                "settings": ["theme_agila_nano_mode"],
+                "min_size": [80, 0]
+            },
     // Status bar label
     {
         "class": "label_control",
