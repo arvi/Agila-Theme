@@ -1114,6 +1114,28 @@
         "layer0.texture": "Agila Theme/assets/file-close.png",
         "layer0.tint": [243, 103, 129] //sidebar file close button tint
     },
+    // Sidebar plus/minus
+    {
+        "class": "disclosure_button_control",
+        "content_margin": [8,8],
+        "layer0.texture": "Agila Theme/assets/closed-plus.png",
+        "layer0.tint": [120, 120, 120],
+        "layer0.opacity": 1,
+        "layer0.inner_margin": 0,
+        "settings": ["theme_agila_sidebar_plus_minus"]
+    },
+    {
+        "class": "disclosure_button_control",
+        "settings": ["theme_agila_sidebar_plus_minus"],
+        "parents": [{"class": "tree_row","attributes": ["hover"]}],
+        "layer0.tint": [160, 160, 160]
+    },
+    {
+        "attributes": ["expanded"],
+        "class": "disclosure_button_control",
+        "layer0.texture": "Agila Theme/assets/opened-minus.png",
+        "settings": ["theme_agila_sidebar_plus_minus"]
+    },
 
 
 //------------------------------------------------------------------------------
