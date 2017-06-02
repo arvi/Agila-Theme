@@ -4,7 +4,24 @@
 
 ### Changelog
 
-##### Version 2.0.0 - CURRENT VERSION
+##### Version 2.2.0 - CURRENT VERSION
+* Added support for title bar (introduced in Dev Build 3127). Thanks to kcmr :)
+
+##### Version 2.1.0
+* Added nano mode support (convenient for small laptops). Thanks to polyvertex :)
+    ```json
+        "theme_agila_nano_mode": true,
+    ```    
+
+* Added sidebar plus/minus icons beside folder. Thanks to mikedcook :)
+    ```json
+        "theme_agila_sidebar_plus_minus": true,
+    ```
+
+* Added Visual Studio Agila Theme ported by whtsky :)
+    - https://marketplace.visualstudio.com/items?itemName=whtsky.agila-theme
+
+##### Version 2.0.0
 * Added Markdown Support based on theme (prerequisite: Markdown Extended Sublime Package)
     - activated via skins package when you chose a specific skin
     - activated via Preferences > Settings - Syntax Specific (when you open a .md file)

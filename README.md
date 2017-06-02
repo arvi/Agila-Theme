@@ -168,10 +168,12 @@ Note: You can use active guide with these schemes by adding:
 I've made some UI parts customizable e.g icon colors, sidebar items, etc.. :)
 
 ##### THEME OVERRIDE
+#
 overrides default theme sidebar, scrollbars and tab background based on theme scheme background
 ```json
 "theme_agila_camouflage": true, 
 ```
+
 overrides default theme sidebar and tab background only based on theme scheme background
 ```json
 "theme_agila_camouflage_semi": true,
@@ -335,7 +337,7 @@ if a plus/minus icon is preferred beside folder icon
 - [Cobalt2 Scheme](https://github.com/wesbos/cobalt2)
 - [Colorhexa](http://www.colorhexa.com/) - color combinations
 - `meteor create --sample todos` - screenshot code snippet :p
-- Contributor(s): [davidmatas](https://github.com/davidmatas), [Cldfire](https://github.com/Cldfire), [polyvertex](https://github.com/polyvertex), [mikedcook](https://github.com/mikedcook)
+- Contributor(s): [davidmatas](https://github.com/davidmatas), [Cldfire](https://github.com/Cldfire), [polyvertex](https://github.com/polyvertex), [mikedcook](https://github.com/mikedcook), [kcmr](https://github.com/kcmr)
 
 ---
 ### Fun Experiments :p
