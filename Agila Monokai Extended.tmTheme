@@ -217,6 +217,32 @@
     </dict>
     <dict>
       <key>name</key>
+      <string>Function call</string>
+      <key>scope</key>
+      <string>variable.function, variable.annotation</string>
+      <key>settings</key>
+      <dict>
+        <key>fontStyle</key>
+        <string></string>
+        <key>foreground</key>
+        <string>#66d9ef</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>Function annotation</string>
+      <key>scope</key>
+      <string>punctuation.definition.annotation</string>
+      <key>settings</key>
+      <dict>
+        <key>fontStyle</key>
+        <string></string>
+        <key>foreground</key>
+        <string>#f92672</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>name</key>
       <string>Tag name</string>
       <key>scope</key>
       <string>entity.name.tag</string>
@@ -1803,6 +1829,32 @@
         <string></string>
         <key>foreground</key>
         <string>#66d9ef</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>Make build: Filename</string>
+      <key>scope</key>
+      <string>entity.name.filename</string>
+      <key>settings</key>
+      <dict>
+        <key>fontStyle</key>
+        <string></string>
+        <key>foreground</key>
+        <string>#e6db74</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>Make build: warnings and errors</string>
+      <key>scope</key>
+      <string>message.error</string>
+      <key>settings</key>
+      <dict>
+        <key>fontStyle</key>
+        <string></string>
+        <key>foreground</key>
+        <string>#F92672</string>
       </dict>
     </dict>
     <dict>

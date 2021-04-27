@@ -181,7 +181,7 @@
       <key>name</key>
       <string>Function Call</string>
       <key>scope</key>
-      <string>meta.function-call</string>
+      <string>variable.function</string>
       <key>settings</key>
       <dict>
         <key>foreground</key>
