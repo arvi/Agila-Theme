@@ -4,14 +4,17 @@
 
 ### Changelog
 
-##### Version 2.2.0 - CURRENT VERSION
+##### Version 2.3.0 - CURRENT VERSION
+* Added missing scopes for variable.function and message.error. Thanks to davidhcefx :)
+
+##### Version 2.2.0
 * Added support for title bar (introduced in Dev Build 3127). Thanks to kcmr :)
 
 ##### Version 2.1.0
 * Added nano mode support (convenient for small laptops). Thanks to polyvertex :)
     ```json
         "theme_agila_nano_mode": true,
-    ```    
+    ```
 
 * Added sidebar plus/minus icons beside folder. Thanks to mikedcook :)
     ```json
@@ -33,19 +36,19 @@
 * Acknowledged fantastic Skins pull request from Cldfire in README contributors :)
 
 ##### Version 1.9.0
-* Added two more sidebar tree options with "mini" as the smallest 
+* Added two more sidebar tree options with "mini" as the smallest
 (to save spacing for large projects)
     ```json
         "theme_agila_sidebar_mini":true,
         "theme_agila_sidebar_xsmall":true,
-    ```    
+    ```
 * Added Agila Cobalt Theme :)
     ```json
         "theme": "Agila Cobalt.sublime-theme",
         "color_scheme": "Packages/Agila Theme/Agila Cobalt.tmTheme",
     ```
-* Fixed Agila Monocyanide Theme colors     
-* Fixed all theme's find panel selection colors to match the actual theme           
+* Fixed Agila Monocyanide Theme colors
+* Fixed all theme's find panel selection colors to match the actual theme
 
 ##### Version 1.8.0
 * Added active tab text color for easier identification (default: pink)
@@ -71,15 +74,15 @@
             [
                 "draw_normal",
                 "draw_active"
-            ],    
-        ```    
+            ],
+        ```
 * Added other color schemes to Agila Family :)
     - Based on default Oceanic Next Color Scheme
         ```json
             "theme": "Agila Origin.sublime-theme",
             "color_scheme": "Packages/Agila Theme/Agila Origin Oceanic Next.tmTheme",
         ```
-    - Based on Dracula Color Scheme      
+    - Based on Dracula Color Scheme
         ```json
             "theme": "Agila Dracula.sublime-theme",
             "color_scheme": "Packages/Agila Theme/Agila Dracula.tmTheme",
@@ -92,12 +95,12 @@
 * Added theme override options
     - overrides default theme sidebar, scrollbars and tab background based on theme scheme background
         ```json
-            "theme_agila_camouflage": true, 
+            "theme_agila_camouflage": true,
         ```
     - overrides default theme sidebar and tab background only based on theme scheme background
         ```json
-            "theme_agila_camouflage_semi": true, 
-        ```    
+            "theme_agila_camouflage_semi": true,
+        ```
 * Modified scrollbar thinness options and default
     - default changed from width: 3 --> width: 4
         ```json

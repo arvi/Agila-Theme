@@ -5,7 +5,7 @@ Couldn't find a theme I really dig, so I tried to make my own theme based on all
 ***
 
 ## Screenshots
-Screenshots below are based on the default starting point of all Agila Themes wherein _Font face: [__Inconsolata__](https://www.google.com/fonts/specimen/Inconsolata) | Font size: 21*._ 
+Screenshots below are based on the default starting point of all Agila Themes wherein _Font face: [__Inconsolata__](https://www.google.com/fonts/specimen/Inconsolata) | Font size: 21*._
 
 You can customize the UI to your liking _(e.g camouflage workspace with the color scheme background, sidebar, tab, autocomplete, and scrollbar setup/color preferences)_ by referring to the **"[Settings](#settings)"** section of this documentation. Enjoy! :)
 
@@ -57,13 +57,13 @@ Agila themes include Markdown syntax highlighting provided you have [Markdown Ex
 
 ### Activation
 ##### *Chill* way via Skins
-[Skins](https://packagecontrol.io/packages/Skins) provides an easy way to manage your themes for Sublime Text 3. Run its `Select Skin` command from the Command Palette *`Tools > Command Palette...`* or `CMD/CTRL + SHIFT + P` and choose any of the various `Agila` theme variants from the list. 
+[Skins](https://packagecontrol.io/packages/Skins) provides an easy way to manage your themes for Sublime Text 3. Run its `Select Skin` command from the Command Palette *`Tools > Command Palette...`* or `CMD/CTRL + SHIFT + P` and choose any of the various `Agila` theme variants from the list.
 **No extra steps for activating Markdown syntax highlighting based on selected theme.**
 
 
 ##### *Woooo* way
 via User Preferences file (*`Sublime Text > Preferences > Settings - User`*). After setting up,
-don't forget to **restart Sublime Text Editor** for changes to take effect. 
+don't forget to **restart Sublime Text Editor** for changes to take effect.
 
 **To also enable Markdown syntax highlighting based on selected theme:**
 
@@ -171,7 +171,7 @@ I've made some UI parts customizable e.g icon colors, sidebar items, etc.. :)
 #
 overrides default theme sidebar, scrollbars and tab background based on theme scheme background
 ```json
-"theme_agila_camouflage": true, 
+"theme_agila_camouflage": true,
 ```
 
 overrides default theme sidebar and tab background only based on theme scheme background
@@ -322,7 +322,7 @@ if a plus/minus icon is preferred beside folder icon
 #
 ---
 ### Ports
-- [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=whtsky.agila-theme) by whtsky 
+- [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=whtsky.agila-theme) by whtsky
 ---
 ### Thanks to
 - [Preap Theme](https://packagecontrol.io/packages/Preap) - UI inspiration and .sublime-theme source code :)
@@ -337,7 +337,7 @@ if a plus/minus icon is preferred beside folder icon
 - [Cobalt2 Scheme](https://github.com/wesbos/cobalt2)
 - [Colorhexa](http://www.colorhexa.com/) - color combinations
 - `meteor create --sample todos` - screenshot code snippet :p
-- Contributor(s): [davidmatas](https://github.com/davidmatas), [Cldfire](https://github.com/Cldfire), [polyvertex](https://github.com/polyvertex), [mikedcook](https://github.com/mikedcook), [kcmr](https://github.com/kcmr)
+- Contributor(s): [davidmatas](https://github.com/davidmatas), [Cldfire](https://github.com/Cldfire), [polyvertex](https://github.com/polyvertex), [mikedcook](https://github.com/mikedcook), [kcmr](https://github.com/kcmr), [davidhcefx](https://github.com/davidhcefx)
 
 ---
 ### Fun Experiments :p
